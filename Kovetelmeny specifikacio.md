@@ -23,6 +23,20 @@ hogy az alkalmazottaikat a papír alapú adat és információ cserék megzavarj
 ami szintén negatív kihatással van az alkalmazottaik munkavégzésére.
 
 ## 3. Vágyálomrendszer
+
+Csapatunk egy olyan programot szeretne készíteni,
+ami tudna titkosítani szöveget egy vagy több módszerrel is egyszerre,
+majd ugyanazok a paraméterek (jelszó és egyebek) segítségével vissza is tudja fejteni.
+Célunk az információ tárolásának és küldésének biztonságosabbá tétele.
+A programban beállítható a használt titkosítás,
+akár több is egyszerre a nagyobb biztonságért és nehezebb illegális visszafejtésért.
+A titkosítani/visszafejteni kívánt szöveget vagy fájlból olvassa be a program,
+vagy a felhasználó egy szövegdobozba írhatja. A kapott szöveget ugyanígy egy fájlba lehet menteni,
+vagy a programon belül egy szövegdoboz írja ki. A felhasználónak,
+aki vissza szeretné fejteni a titkosított szöveget,
+tudnia kell a titkosítás módszerét és a jelszavát is.
+Ha hibásan választja ki, akkor a visszakapott szövegben belül nem lesz értelmezhető szó.
+
 ## 4. Pályázat törvények, rendeletek, szabványok és ajánlások felsorolása
 ## 5. Jelenlegi üzleti folyamatok modellje
 

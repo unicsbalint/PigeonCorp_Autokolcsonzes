@@ -40,6 +40,16 @@ Ha hibásan választja ki, akkor a visszakapott szövegben belül nem lesz érte
 ## 4. Pályázat törvények, rendeletek, szabványok és ajánlások felsorolása
 ## 5. Jelenlegi üzleti folyamatok modellje
 
+A mai világban az üzenetváltásaink biztonsága nem mindig tudható elég megfelelőnek, könnyedén elolvashatóak üzeneteink, ha:
+- Az üzenetküldő klienst feltörik, vagy tömeges áttörés áldozatává esik, üzeneteink a nyilvánosság, vagy egy harmadik fél elé kerülhet.
+- Véletlenül nem jelentkezünk ki az üzenetküldő kliensből, és magára hagyjuk a számítógépet.
+- Malware áldozatává esve.
+- Szolgáltatók nem használnak elég erős titkosítást.
+Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságában, mivel:
+- Elolvashatják üzeneteinket a tudtunk nélkül.
+- Eladhatják harmadik feleknek.
+- Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
+
 ## 6. Igényelt üzleti folyamatok modellje
 
 A megrendelő alkalmazottai képesek legyenek a szoftveren belül a beírni egy szöveget,

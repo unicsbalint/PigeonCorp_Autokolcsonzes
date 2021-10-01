@@ -37,8 +37,7 @@ aki vissza szeretné fejteni a titkosított szöveget,
 tudnia kell a titkosítás módszerét és a jelszavát is.
 Ha hibásan választja ki, akkor a visszakapott szövegben belül nem lesz értelmezhető szó.
 
-## 4. Pályázat törvények, rendeletek, szabványok és ajánlások felsorolása
-## 5. Jelenlegi üzleti folyamatok modellje
+## 4. Jelenlegi üzleti folyamatok modellje
 
 A mai világban az üzenetváltásaink biztonsága nem mindig tudható elég megfelelőnek, könnyedén elolvashatóak üzeneteink, ha:
    * Az üzenetküldő klienst feltörik, vagy tömeges áttörés áldozatává esik, üzeneteink a nyilvánosság, vagy egy harmadik fél elé kerülhet.
@@ -51,7 +50,7 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
    * Eladhatják harmadik feleknek.
    * Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
 
-## 6. Igényelt üzleti folyamatok modellje
+## 5. Igényelt üzleti folyamatok modellje
 
 A megrendelő alkalmazottai képesek legyenek a szoftveren belül a beírni egy szöveget,
 majd ez alapján a szöveg alapján visszakapni a titkosítottat.
@@ -59,7 +58,7 @@ Miután ezt a titkosított szöveget elküldi a felhasználó,
 a fogadó képes legyen a szoftver megléte mellett a titkosított szöveget visszafejteni az eredetire, 
 így biztosítva, hogy az üzenetet csak a cég alkalmazottai tudják olvasni.
 
-## 7. Követelménylista
+## 6. Követelménylista
 
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
@@ -72,4 +71,4 @@ a fogadó képes legyen a szoftver megléte mellett a titkosított szöveget vis
 | K7 | Kriptográfiai módszer | Autoclave titkosítás | Hasonló Vigenére-féle titkosításhoz. Az első pár karaktert maga a jelszó karakterei kódolják le, majd utána a szöveg többi rész, ezáltal nehezíti a fejtést. |
 | K8 | Funkció | Titkosítás, visszafejtés | A megadott beállításokkal a program titkosítja/visszafejti a kívánt szöveget, fájlt. |
 
-## 8. Fogalomtár
+## 7. Fogalomtár

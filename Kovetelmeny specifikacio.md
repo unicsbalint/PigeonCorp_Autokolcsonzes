@@ -72,3 +72,7 @@ a fogadó képes legyen a szoftver megléte mellett a titkosított szöveget vis
 | K8 | Funkció | Titkosítás, visszafejtés | A megadott beállításokkal a program titkosítja/visszafejti a kívánt szöveget, fájlt. |
 
 ## 7. Fogalomtár
+   * Malware: Rosszindulatú, kártékony szoftver amelyet adatlopásra is használnak.
+   * Kódolás: Az adatok más felhasználható formátumba történő átalakítása különböző rendszerek által.
+   * Titkosítás: A titkosítás az adatok átalakításának módja, azzal a szándékkal, hogy titokban tartja.
+   * Adatszivárgás: Amikor védett, bizalmas adatok valamilyen módon kijutnak, „kiszivárognak” a védett környezetből.

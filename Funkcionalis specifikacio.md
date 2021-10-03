@@ -53,6 +53,10 @@ megfelelően megsemmisítve, kikerülhet harmadik félhez.
 | K10 | Funkció |  Fájl/szövegdobozba írás | A titksoított/visszafejtett szöveget fájlba írni vagy egy szövegdobozba visszaírni. |
 
 ## 6. Használati esetek
+
+1. Titkosító felhasználó: Be tudja állítani a kívánt titkosítási módszereket. Miután kiválasztotta, meg kell adnia a kiválasztott módszerek paramétereit (pl.: jelszó), ezután a kívánt mentési forma alapján a program fájlba menti vagy szövegdobozon keresztül íratja ki a titkosított szöveget
+2. Visszafejtő felhasználó: A titkosító felhasználó alapján beállítja a kívánt módszereket, azok paramétereit, majd a mentési formát. A visszafejtett szöveget a program ugyanúgy egy fájlba írja ki vagy egy szövegdobozon keresztül írja ki, a felhasználó választása alapján.
+
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 ## 8. Képernyőtervek
 ## 9. Forgatókönyvek

@@ -76,3 +76,4 @@ a fogadó képes legyen a szoftver megléte mellett a titkosított szöveget vis
    * Kódolás: Az adatok más felhasználható formátumba történő átalakítása különböző rendszerek által.
    * Titkosítás: A titkosítás az adatok átalakításának módja, azzal a szándékkal, hogy titokban tartja.
    * Adatszivárgás: Amikor védett, bizalmas adatok valamilyen módon kijutnak, „kiszivárognak” a védett környezetből.
+   * Kulcsszó: Olyan szó, amelyben nincsen betű ismétlés.

@@ -25,6 +25,16 @@ Csak olyan Windows rendszeren használható, melyen telepítve van a .NET Framew
 
 ## 5. Funkcionális terv
 ## 6. Fizikai környezet
+
+### Vásárolt softwarekomponensek és külső rendszerek
+Nincsenek vásárolt szoftverkomponensek.
+### Hardver topológia
+Az alkalmazás 32 bites Windows rendszerre készült, így a 64 bites verzión is működik.
+### Fizikai alrendszerek
+Kliens gépek: A követelményeknek megfelelő, Windows-t futtatatására alkalmas PC-k, amik rendelkeznek a .Net keretrendszerrel.
+### Fejlesztő eszközök
+Visual Studio 2019
+
 ## 7. Absztrakt domain modell
 ## 8. Architekturális terv
 ## 9. Adatbázis terv

@@ -28,6 +28,9 @@ Csak olyan Windows rendszeren használható, melyen telepítve van a .NET Framew
 ## 7. Absztrakt domain modell
 ## 8. Architekturális terv
 ## 9. Adatbázis terv
+
+Adatbázis használatának hiányában nem szükséges az adatbázis terv.
+
 ## 10. Implementációs terv
 ## 11. Tesztterv
 ## 12. Telepítési terv

@@ -52,3 +52,14 @@ Szoftver telepítési terv: Szükségünk van egy 32 bites Windows operációs r
 hogy használni tudjuk a programot.
 
 ## 13. Karbantartási terv
+
+Fontos ellenőrizni:
+*	A kódolás/visszafejtés jól működik
+*	A program nem lassul be
+
+Új kódolási típus megjelenésénél fontos, hogy implementáljuk azt a programunkba, így a felhasználok új élménnyel gazdagodhatnak és biztonságosabbá tesszük a titkosítandó szöveget, fájlt.
+
+Figyelembe kell venni a felhasználó által jött visszajelzést is a programmal kapcsolatban.
+Ha hibát talált, mielőbb orvosolni kell, lehet az:
+*	Működéssel kapcsolatos
+*	Kinézet, dizájnnal kapcsolatos

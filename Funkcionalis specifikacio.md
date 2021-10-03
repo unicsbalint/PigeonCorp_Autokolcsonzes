@@ -60,6 +60,70 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
 ![beallitasok](https://github.com/unicsbalint/PigeonCorp_MessageEncrypter/blob/main/imgs/settings.png)
 
 ## 9. Forgatókönyvek
+
+Minden felhasználónak a program megnyitásakor a főablak jelenik meg,
+melyben látható:
+    *	Szövegdoboz.
+    *	Fájl kiválasztás gomb.
+    *	Beállítások gomb.
+    *	Művelet indítása gomb.
+    *	4 pipa
+        -	Fájlba olvasás,
+        -	Fájlba írás, 
+        -	szöveg titkosítása, 
+        -	titkosított szöveg visszafejtése
+
+A szövegdobozba írjuk azt a szöveget, amit szeretnénk:
+*	Titkosítani
+*	Visszafejteni
+*	Akár csak fájlba írni
+
+Visszafejtésnél ügyeljünk, hogy a titkosított üzenetet „helyesen” írjuk le, mert a legkisebb elírás
+is megváltoztathatja az igazi üzenetet, és így a visszafejtőnek problémája fog akadni az értelmezéssel.
+Mondhatjuk ezt a titkosításnál is, hiszen, ha elírjuk a titkosított szöveget, akkor a titkosított 
+szöveg is más lesz, így a visszafejtve is más üzenetet fog visszaadni, nem pedig az eredetit.
+
+Fájl kiválasztás gombbal, kiválaszthatjuk a fájlt, amit titkosítani, vagy visszafejteni szeretnénk. 
+A fájl formátuma .txt legyen. Miután kiválasztottjuk a fájlt, vessünk egy pillantást a szövegre,
+hogy „helyesen” van-e írva, a titkosítási hibák elkerülése miatt.
+
+Beállítások gombra kattintva egy mellék ablak nyílik meg, ahol kiválaszthatjuk a kívánt kódolási, 
+és dekódolási módszereket. Többféle titkosítási módszert találhatunk itt, ami segíti, hogy 
+komplexebb védelme legyen az adott szöveg, vagy fájlnak, így biztonságosabbá téve azt.
+Például:
+*	Caeser-féle titkosítás
+*	Kulcsszavas Caeser-féle titkosítás
+*	Hill-féle titkosítás
+*	Vigenére-féle titkosítás
+*	Autoclave titkosítás
+
+Caeser-féle titkosítás: 
+A betűkhöz hozzárendeli az utána lévőt eltolási mértékkel. Az így kapott kódolt szöveg már nem tartalmaz értelmes szavakat.
+
+Kulcsszavas Caeser-féle titkosítás: 
+Hasonló a Caesar-féle titkosításhoz, az első néhány betűt a kulcsszó betűihöz rendeli hozzá. Ezzel nehezebbé teszi az illegális fejtő munkáját.
+
+Hill-féle titkosítás:
+Mátrixokkal való szorzást és maradékos osztást alkalmazva betűpárokat kódol betűpárokká.
+
+Vigenére-féle titkosítás:
+Karaktertáblázatot alkalmazva kódolja a betűket a szövegben. A kódolást a jelszó karaktereinek segítségével végzi el.
+
+Autoclave titkosítás:
+Hasonló Vigenére-féle titkosításhoz. Az első pár karaktert maga a jelszó karakterei kódolják le, majd utána a szöveg többi rész, ezáltal nehezíti a fejtést.
+
+Ezután menthetjük a beállításainkat, és kódolhatunk, illetve dekódolhatunk,
+vagy a mégse gombra megyünk és nem mentjük el változtatásainkat.
+
+Beállíthatjuk a főablakon, hogy milyen műveletet akarunk csinálni a jelölő négyzet bepipálásával.
+Fájból olvasás: bepipáljuk, ha a már leírott formátumban létezik a szöveg, amit kódolni/dekódolni szeretnénk.
+Fájlból írás: bepipáljuk, ha fájlba szeretnénk írni a kódolt, illetve dekódolt üzenetet.
+Szöveg titkosítás: bepipáljuk, ha a szöveget titkosítani szeretnénk.
+Titkosított szöveg visszafejtése: bepipáljuk, ha a titkosított szöveget vissza szeretnénk fejteni az eredeti szövegre.
+
+Művelet indításával elvégezhetjük a kódolást/dekódolást, ha minden beállítottunk. Ha tovább kell kódolni/dekódolni akkor addig folytatjuk, amíg nem kapjuk meg az eredeti szöveget, vagy már eléggé biztonságosnak véljük.
+
+
 ## 10. Funkcó - követelmény megfeleltetése
 
 | Id | Követelmény | Funkció |

@@ -29,12 +29,6 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
    * Elolvashatják üzeneteinket a tudtunk nélkül.
    * Eladhatják harmadik feleknek.
    * Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
-   
-Némely cég minden fontosabb belső adatot és információt papíron, személyesen osztják meg
-egymással, ugyanis a cég által használt nyilvános levelezőrendszert nem tartják elég
-biztonságosnak. Ami ineffektív, és nehéz nyivántartani a sok papír alapú dokumentációt,
-és ez sem tud teljesen biztonságos lenni.- például: ha az adott dokumentum nem lesz
-megfelelően megsemmisítve, kikerülhet harmadik félhez.
 
 ## 4. Igényelt üzleti folyamatok modellje
 ## 5. Követelménylista

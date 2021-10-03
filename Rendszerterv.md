@@ -1,5 +1,18 @@
 # Rendszerterv
 ## 1. A rendszer célja
+
+A rendszer célja, hogy az üzeneteinket biztonságosabbá tegyük azzal, hogy különböző
+titkosítási módszereket alkalmazunk. Ezeket a módszereket vegyíteni is lehet, mellyel
+csökkenthetjük a szöveg visszafejtésének  esélyét idegen fejtők által. Fontos, hogy a
+felhasználó könnyen el tudjon igazodni a felületeken ezért minimalista felhasználói felületet
+kap a program. A titkosításhoz meg kell adni bizonyos paramétereket a beállításokban 
+(például mekkora legyen a Caesar-féle titkosításnál az eltolás mértéke), majd ugyanezeket
+a paramétereket használva a felhasználó vissza is tudja fejteni a titkosított szöveget. 
+A program titkosítani/visszafejteni kívánt szöveget fájlból vagy egy szövegdobozból tudja be,- 
+és a titkosított/visszafejtet szöveget fájlba menteni tudja vagy egy szövegdobozon keresztül
+kiírja a felhasználónak. Ha a felhasználó vissza szeretné fejteni a kívánt titkosított üzenetet,
+akkor tudnia kell a használt módszert és a módszerhez szükséges paramétert is.
+
 ## 2. Projektterv
 ## 3. Üzleti folyamatok modellje
 ## 4. Követelmények

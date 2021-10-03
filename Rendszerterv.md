@@ -88,9 +88,17 @@ A program nem kapcsolódik az internethez, ezért nem kell webszervert használn
 ### Adatbázis rendszer
 A program nem kapcsolódik adatbázis rendszerhez, ezért nem kell adatbázis rendszert alkalmazni
 
+### A program elérése, kezelése
+A programot Windows operációs rendszert futtató és .NET keretrendszerrel rendelkező számítógép
+futtathatja. A futtatás egyszerű, csak kétszer kell rákattintani a futtatható álományra, vagy
+az allománynak a parancsikonjára.
+
 ## 9. Adatbázis terv
 
-Adatbázis használatának hiányában nem szükséges az adatbázis terv.
+Adatbázis használatának hiányában nem szükséges az adatbázis terv,
+de a program beállításokat egy fájlba menti el és olvassa be a könnyebb felhasználhatóság
+érdekében. Egy felhasználó több ilyen beálítás fájlt is hordozhat magával, a különböző
+tartalmú fájlok/üzenetek titkosításához.
 
 ## 10. Implementációs terv
 

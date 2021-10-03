@@ -16,6 +16,26 @@ módszert és a módszerhez szükséges paramétert is. Ha ezt hibásan választ
 a kapott szöveg olvashatatlan lesz számára.
 
 ## 3. Jelenlegi üzleti folyamatok modellje
+
+A mai világban az üzenetváltásaink biztonsága nem mindig tudható elég megfelelőnek, könnyedén
+elolvashatóak üzeneteink, ha:
+   * Az üzenetküldő klienst feltörik, vagy tömeges áttörés, vagy adatszivárgás áldozatává esik,
+   üzeneteink a nyilvánosság, vagy egy harmadik fél elé kerülhet.
+   * Véletlenül nem jelentkezünk ki az üzenetküldő kliensből, és magára hagyjuk a számítógépet.
+   * Malware áldozatává esve.
+   * Szolgáltatók nem használnak elég erős titkosítást.
+
+Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságában, mivel:
+   * Elolvashatják üzeneteinket a tudtunk nélkül.
+   * Eladhatják harmadik feleknek.
+   * Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
+   
+Némely cég minden fontosabb belső adatot és információt papíron, személyesen osztják meg
+egymással, ugyanis a cég által használt nyilvános levelezőrendszert nem tartják elég
+biztonságosnak. Ami ineffektív, és nehéz nyivántartani a sok papír alapú dokumentációt,
+és ez sem tud teljesen biztonságos lenni.- például: ha az adott dokumentum nem lesz
+megfelelően megsemmisítve, kikerülhet harmadik félhez.
+
 ## 4. Igényelt üzleti folyamatok modellje
 ## 5. Követelménylista
 

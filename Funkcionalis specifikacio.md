@@ -59,6 +59,12 @@ megfelelően megsemmisítve, kikerülhet harmadik félhez.
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 ## 8. Képernyőtervek
+
+### Főablak:
+![foablak](https://github.com/unicsbalint/PigeonCorp_MessageEncrypter/blob/main/imgs/main.png)
+### Beállítások:
+![beallitasok](https://github.com/unicsbalint/PigeonCorp_MessageEncrypter/blob/main/imgs/settings.png)
+
 ## 9. Forgatókönyvek
 ## 10. Funkcó - követelmény megfeleltetése
 

@@ -44,4 +44,11 @@ Adatbázis használatának hiányában nem szükséges az adatbázis terv.
 ## 10. Implementációs terv
 ## 11. Tesztterv
 ## 12. Telepítési terv
+
+Fizikai telepítési terv: A titkosító/visszafejtő programnak nincs szüksége adatbázis szerverre, 
+se webszerverre, se internetre, csak meg kell nyitnunk a PC-n.
+
+Szoftver telepítési terv: Szükségünk van egy 32 bites Windows operációs rendszerű PC-re, 
+hogy használni tudjuk a programot.
+
 ## 13. Karbantartási terv

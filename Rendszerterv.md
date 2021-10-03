@@ -93,6 +93,11 @@ A program nem kapcsolódik adatbázis rendszerhez, ezért nem kell adatbázis re
 Adatbázis használatának hiányában nem szükséges az adatbázis terv.
 
 ## 10. Implementációs terv
+
+ * C# program, ami a .NET keretrendszer alkalmazásával fut.
+ * A felhasználói felület - windows form alkalmazás.
+ * A programok objektum orientált programozási paradigma használatával.
+
 ## 11. Tesztterv
 ## 12. Telepítési terv
 

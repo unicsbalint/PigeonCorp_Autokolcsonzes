@@ -14,6 +14,37 @@ kiírja a felhasználónak. Ha a felhasználó vissza szeretné fejteni a kívá
 akkor tudnia kell a használt módszert és a módszerhez szükséges paramétert is.
 
 ## 2. Projektterv
+
+### 2.1 Projektszerepkörök, felelőségek:
+   * Scrum master: (TBD)
+   * Product owner: (TBD)
+   * Üzleti szereplők:
+     - Megrendelő: (TBD)
+     
+### 2.2 Projektmunkások és felelőségek:
+   * Frontend: (TBD)
+   * Backend: (TBD)
+   * Tesztelés:
+     * Bagoly Gábor
+     * Boda Viktor 
+     * Fejes Bence
+     * Matuch Richárd
+     
+### 2.3 Ütemterv
+
+|Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Hátralévő idő (nap) |
+|-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
+|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   0 |             
+|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   2 |
+|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                2 |                   2 |
+|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                0 |                  11 |
+|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                0 |                  11 |
+|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                0 |                  11 |
+|Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                0 |                  11 |
+|Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                0 |                  11 |
+|Program                  |Tesztelés                               |         4 |             2 |                      2 |                0 |                  11 |
+
+
 ## 3. Üzleti folyamatok modellje
 ## 4. Követelmények
 

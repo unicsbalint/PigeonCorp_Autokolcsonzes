@@ -37,6 +37,13 @@ Visual Studio 2019
 
 ## 7. Absztrakt domain modell
 ## 8. Architekturális terv
+
+### Webszerver
+A program nem kapcsolódik az internethez, ezért nem kell webszervert használni
+
+### Adatbázis rendszer
+A program nem kapcsolódik adatbázis rendszerhez, ezért nem kell adatbázis rendszert alkalmazni
+
 ## 9. Adatbázis terv
 
 Adatbázis használatának hiányában nem szükséges az adatbázis terv.

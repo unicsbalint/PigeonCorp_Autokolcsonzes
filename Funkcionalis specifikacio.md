@@ -61,4 +61,12 @@ megfelelően megsemmisítve, kikerülhet harmadik félhez.
 ## 8. Képernyőtervek
 ## 9. Forgatókönyvek
 ## 10. Funkcó - követelmény megfeleltetése
+
+| Id | Követelmény | Funkció |
+| :---: | --- | --- |
+| K1 | Egyszerű, innovatív | A program funkciója a legfontosabb, de az is egy kihagyatlan rész, hogy kinézete és használata is egyszerű, felhasználóbarát legyen. Itt a felhasználó titkosít hatja vagy visszafejtheti a szöveget vagy fájlokat. |
+| K2 | Sokszínű használat | Miután kiválasztotta a szöveget vagy fájlt, amit titkosítani vagy visszafejteni szeretne a felhasználó, azután kiválaszthatja a paraméteradással, hogy hogyan is szeretné használni. Bár helytelen követelmény használatnál figyelmeztet. |
+| K3 | Gyorsaság | A megfelelő működése mellett az is egy fontos tényező, hogy a kódolást vagy visszafejtést gyorsan tegye meg, de a gyorsasága miatt ne történjen hiba a folyamat alatt vagy a folyamat végén. |
+| K4 | Folytatás | A szöveget miután titkosítottjuk lehessen tovább titkosítani vagy ha visszafejtettünk, lehessen visszafejteni amíg vissza nem kapjuk az értelmes szöveget. |
+
 ## 11 Fogalomszótár

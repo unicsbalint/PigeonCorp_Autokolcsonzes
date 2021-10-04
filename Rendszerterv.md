@@ -35,14 +35,14 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Hátralévő idő (nap) |
 |-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
 |Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   0 |             
-|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   2 |
-|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                2 |                   2 |
-|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                0 |                  11 |
-|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                0 |                  11 |
-|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                0 |                  11 |
-|Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                0 |                  11 |
-|Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                0 |                  11 |
-|Program                  |Tesztelés                               |         4 |             2 |                      2 |                0 |                  11 |
+|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                3 |                   0 |
+|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                3 |                   0 |
+|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                0 |                   9 |
+|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                0 |                   9 |
+|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                0 |                   9 |
+|Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                0 |                   9 |
+|Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                0 |                   9 |
+|Program                  |Tesztelés                               |         4 |             2 |                      2 |                0 |                   9 |
 
 
 ## 3. Üzleti folyamatok modellje

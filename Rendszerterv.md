@@ -30,9 +30,9 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
      * Fejes Bence
      * Matuch Richárd
      
-### 2.3 Ütemterv
+### 2.3 Ütemterv:
 
-|Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Hátralévő idő (nap) |
+|Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
 |-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
 |Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   0 |             
 |Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                3 |                   0 |
@@ -44,6 +44,8 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 |Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                0 |                   9 |
 |Program                  |Tesztelés                               |         4 |             2 |                      2 |                0 |                   9 |
 
+### 2.4 Mérföldkövek:
+   * (TBD)
 
 ## 3. Üzleti folyamatok modellje
 

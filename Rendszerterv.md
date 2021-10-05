@@ -98,7 +98,8 @@ Csak olyan Windows rendszeren használható, melyen telepítve van a .NET Framew
 ### 5.1 Rendszerszereplők
 
 A rendszer, mivel lokálisan a felhasználók számítógépén,
-internetre kapcsolódás nélkül működik,
+internetre kapcsolódás nélkül működik.
+Egyetlen egy jogosultsági kör van, 
 ezért a felhasználók között nem teszünk különbséget.
 
 ### 5.2 Menühierarchiák

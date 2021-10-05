@@ -120,7 +120,6 @@ Kliens gépek: A követelményeknek megfelelő, Windows-t futtatatására alkalm
 ### Fejlesztő eszközök
 Visual Studio 2019
 
-## 7. Absztrakt domain modell
 ## 8. Architekturális terv
 
 ### Webszerver
@@ -153,6 +152,16 @@ A tesztelések célja a rendszer és komponensei funckionalitásának teljes viz
 ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása.
 A teszteléseket a fejlesztői csapat minden tagja elvégzi.
 Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
+
+### Tesztesetek
+
+ | Teszteset | Elvárt eredmény | 
+ | Helytelen titkosítási beállítások megadása | A titkosítás nem hajtódik végre. Üzenetben jelezni a felhasználónak, hogy miért és milyen adatok megadásával történhet. |
+ | Helyes titkosítási beállítások megadása | Megtörténik a titkosítás. A felhasználó kap egy kulcsot. | 
+ | Helytelen fejtési beállítások megadása helytelen kulccsal | A fejtés nem történhet meg. Jelezni a felhasználónak, hogy helytelenek az adatok. | 
+  | Helytelen fejtési beállítások megadása helyes kulccsal | A fejtés nem történhet meg. Jelezni a felhasználónak, hogy helytelenek az adatok. | 
+  | Helyes fejtési beállítások megadása helytelen kulccsal | A fejtés nem történhet meg. Jelezni a felhasználónak, hogy helytelen a kulcs. | 
+ | Helyes fejtési beállítások megadása helyes kulccsal | A fejtés végbemegy. A felhasználó megkapja az üzenetet. | 
 
 A tesztelési dokumentum kitöltésére egy sablon:
 

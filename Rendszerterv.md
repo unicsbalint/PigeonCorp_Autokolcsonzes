@@ -48,7 +48,7 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 |Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
 |Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                8 |                   8 |
 |Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Tesztelés                               |         4 |             2 |                      2 |                8 |                   8 |
+|Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
 
 ### 2.4 Mérföldkövek:
    * Prototípus átadása

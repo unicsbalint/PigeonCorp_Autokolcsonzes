@@ -168,3 +168,19 @@ Művelet indításával elvégezhetjük a kódolást/dekódolást, ha minden be�
 | K4 | Folytatás | A szöveget miután titkosítottjuk lehessen tovább titkosítani vagy ha visszafejtettünk, lehessen visszafejteni amíg vissza nem kapjuk az értelmes szöveget. |
 
 ## 11 Fogalomszótár
+
+* **Titkosítás:** Tetszőleges szöveg olyan módon való változtatása,
+hogy a szöveg eredeti jelentése az,
+olvasó számára érthetetlen legyen, és csak azok tudják
+olvasni akik rendelkeznek a visszafejtéshez szükséges információkkal.
+* **Visszafejtés:** A titkosított szöveg oly módon való módosítása,
+hogy visszakapjuk az eredeti értelmes szöveget.
+* **Adatszivárgás:** Nem engedélyezett adatátvitel ami következtében az érintett
+adatok nem megfelelő kezekbe kerülhetnek.
+* **Malware:** Az angol "Malicious Software", magyarul rosszindulatú szoftver jelentése,
+köznyelvben az ilyen szoftverekre is használjuk a számítógépes vírus szót. Általában
+valamilyen féle haszonszerzés céljából támadják meg ilyenekkel a rendszereket és
+hálózatokat, viszont vannak csak a készítő saját szórakozása céljábólól
+elterjedt ilyen szoftverek is. Természetesen ennek minden fajtája illegális.
+* **Kriptográfia:** Titkosítási és visszafejtési módszerek felfedezésével
+foglalkozó tudományág. Konyhanyelven titkosírásnak is nevezzük.

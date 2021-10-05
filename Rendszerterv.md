@@ -146,6 +146,23 @@ tartalmú fájlok/üzenetek titkosításához.
  * A programok objektum orientált programozási paradigma használatával.
 
 ## 11. Tesztterv
+
+A tesztelések célja a rendszer és komponensei funckionalitásának teljes vizsálata,
+ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása.
+A teszteléseket a fejlesztői csapat minden tagja elvégzi.
+Egy teszt eredményeit a tagok dokumentálják külön fájlokba.
+
+A tesztelési dokumentum kitöltésére egy sablon:
+
+**Tesztelő:** Vezetéknév Keresztnév
+    
+**Tesztelés dátuma:** Év.Hónap.Nap
+
+Tesztszám | Rövid leírás | Várt eredmény | Eredmény | Megjegyzés
+----------|--------------|---------------|----------|-----------
+például. Teszt #01 | Regisztráció | A felhasználó az adatok megadásával sikeresen regisztrálni tud  | A felhasználó sikeresen regisztrált | Nem találtam problémát.
+... | ... | ... | ... | ...
+
 ## 12. Telepítési terv
 
 Fizikai telepítési terv: A titkosító/visszafejtő programnak nincs szüksége adatbázis szerverre, 

@@ -43,6 +43,7 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
    * Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
 
 ## 4. Igényelt üzleti folyamatok modellje
+![image](https://github.com/unicsbalint/PigeonCorp_MessageEncrypter/blob/main/imgs/funkspec-igenyeltuzletifolyamatok.png)
 ## 5. Követelménylista
 
 | Id | Modul | Név | Leírás |

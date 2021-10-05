@@ -65,6 +65,27 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
 2. Visszafejtő felhasználó: A titkosító felhasználó alapján beállítja a kívánt módszereket, azok paramétereit, majd a mentési formát. A visszafejtett szöveget a program ugyanúgy egy fájlba írja ki vagy egy szövegdobozon keresztül írja ki, a felhasználó választása alapján.
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
+
+K1:  A felhasználót ez az ablak fogadja amikor elindítja a szoftvert,
+ezen a felületen már rögtön meg is kezdheti a szövegbevitelt és a titkosítást, vagy fejtést.
+
+K2: Ezen a felületen tudja a felhasználó a titkosítási beállításokat megadni,
+mint, hogy milyen titkosítási módszert használjon és, hogy az milyen bonyolult
+legyen.
+
+K3, K4, K5, K6, K7: Titkosítási módszerek, a felhasználó a
+beállítások menüben tud váltania kívánt módszerek között.
+
+K8: A felhasználónak lehetősége van egész fájlokat is titkosítani a
+szimpla szövegbevitel mellett, a főoldalon kiválaszthatja, hogy
+milyen formában szeretné a szöveget bevinni.
+
+K9: A szövegbevitel után a felhasználó képes megadni, hogy
+a jelenlegi szöveget titkosítani vagy visszafejteni szeretné.
+
+K10: A szövegbeolvasáshoz hasonlóan a felhasználónak lehetősége
+van a visszafejtett szöveget fájlba is kiíírni.
+
 ## 8. Képernyőtervek
 
 ### Főablak:

@@ -46,6 +46,30 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 
 
 ## 3. Üzleti folyamatok modellje
+
+### 3.1 Üzleti szereplők
+
+A rendszer regisztrálás nélkül használható. Akármelyik felhasználó akinek
+az eszközén megtalálható a szoftver mindenféle korlátozás nélkül használhatja.
+Annak eldöntése, hogy a szoftvert kinek az eszközére települ és ki használhatja
+azt a megrendelő vállalat döntésére van bízva.
+
+### 3.2 Üzleti folyamatok
+
+A felhasználó a szoftver elindítása után kedve használhatja a titkosítást és visszafejtést,
+kiválaszthatja, hogy ha szövegből szeretne olvasni vagy írni,
+valamint a szoftver korlátozásain belül testreszabhatja a beállításokat is.
+A beállításokon belül kiválaszthatja a használni kívánt titkosítást és annak
+bonyolultáságát is.
+
+* **Fájl kiválasztása:** A felhasználó ezen menüpont segítségével kiválaszthatja
+a beolvasni kívánt fájlt.
+* **Művelet indítása:** Ezen funkció használatával titkosításkor a szoftver elvégzi a titkosítást
+és az felhasználó által kívánt módon vagy a szövegdobozban vagy pedig külön fájlban
+megjeleníti azt.
+* **Beállítások:** A funkción keresztül elérheti a felhasználó
+a szoftver beállításait.
+
 ## 4. Követelmények
 
 ### Funkcionális követelmények

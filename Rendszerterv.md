@@ -16,14 +16,20 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 ## 2. Projektterv
 
 ### 2.1 Projektszerepkörök, felelőségek:
-   * Scrum master: (TBD)
-   * Product owner: (TBD)
-   * Üzleti szereplők:
-     - Megrendelő: (TBD)
+   * Scrum masters:
+     - Bognár Viktória
+     - Bódi Maja
+     - Cserneczky Bálint
+   * Product owner: Dr. Tajti Tibor Gábor
+   * Üzleti szereplő:
+     - Megrendelő: Dr. Tajti Tibor Gábor
      
 ### 2.2 Projektmunkások és felelőségek:
-   * Frontend: (TBD)
-   * Backend: (TBD)
+   * Frontend: Bagoly Gábor
+   * Backend:
+     - Boda Viktor
+     - Fejes Bence
+     - Matuch Richárd
    * Tesztelés:
      * Bagoly Gábor
      * Boda Viktor 
@@ -34,18 +40,18 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 
 |Funkció                  | Feladat                                | Prioritás | Becslés (nap) | Aktuális becslés (nap) | Eltelt idő (nap) | Becsült idő (nap) |
 |-------------------------|----------------------------------------|-----------|---------------|------------------------|------------------|---------------------|
-|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   0 |             
-|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                3 |                   0 |
-|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                3 |                   0 |
-|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                0 |                   9 |
-|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                0 |                   9 |
-|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                0 |                   9 |
-|Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                0 |                   9 |
-|Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                0 |                   9 |
-|Program                  |Tesztelés                               |         4 |             2 |                      2 |                0 |                   9 |
+|Követelmény specifikáció |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |             
+|Funkcionális specifikáció|Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Rendszerterv             |Megírás                                 |         1 |             1 |                      1 |                1 |                   1 |
+|Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                1 |                   1 |
+|Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Tesztelés                               |         4 |             2 |                      2 |                8 |                   8 |
 
 ### 2.4 Mérföldkövek:
-   * (TBD)
+   * Prototípus átadása
 
 ## 3. Üzleti folyamatok modellje
 

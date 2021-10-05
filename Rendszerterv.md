@@ -92,6 +92,21 @@ a szoftver beállításait.
 Csak olyan Windows rendszeren használható, melyen telepítve van a .NET Framework is.
 
 ## 5. Funkcionális terv
+
+### 5.1 Rendszerszereplők
+
+A rendszer, mivel lokálisan a felhasználók számítógépén,
+internetre kapcsolódás nélkül működik,
+ezért a felhasználók között nem teszünk különbséget.
+
+### 5.2 Menühierarchiák
+
+A szoftver egy nagyon egyszerű menürendszert tartalmaz.
+Az indításkor a felhasználót a főoldal menü fogadja, ahol
+megtalálja az input mezőt, valamint innen átléphet a
+beállításokat tartalmazó menüpontba, ahol testreszabhatja
+milyen konfigurációt szeretne használni.
+
 ## 6. Fizikai környezet
 
 ### Vásárolt softwarekomponensek és külső rendszerek

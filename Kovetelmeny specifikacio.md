@@ -6,18 +6,18 @@ A Pigeon Corp. azzal lett megbízva, hogy tervezzenek egy olyan rendszert,
 ahol a megrendelő cég nem bízik az üzenetküldő rendszerek biztonsággal kapcsolatos intézkedéseiben,
 így szeretnének a bizalmas üzenetváltásaikat még biztonságosabbá tenni,
 viszont a mostani üzenetküldő rendszerüket szeretnék megtartani.
-Egy olyan szoftverre van szükségük amik a cég üzenetit titkosítani tudják,
-hogy csak azon felhasználók számára legyen olvasható akik rendelkeznek a szoftverrel.
-Erre a kérésre terveztünk egy olyan szoftvert amivel ez megvalósítható.
+Egy olyan szoftverre van szükségük, amik a cég üzeneteit titkosítani tudják,
+hogy csak azon felhasználók számára legyen olvasható, akik rendelkeznek a szoftverrel.
+Erre a kérésre terveztünk egy olyan szoftvert, amivel ez megvalósítható.
 
 ## 2. A jelenlegi helyzet leírása
 
-A megerendelő cégnek tevékenységi köréből adódóan, rengeteg fontos,
-bizalmas adatot és információt kell megoszania az alkalmazottaival,
+A megrendelő cégnek tevékenységi köréből adódóan, rengeteg fontos,
+bizalmas adatot és információt kell megosztania az alkalmazottaival,
 hogy a munkájukat hatékonyan tudják végezni.
 Jelenleg minden fontosabb cégen belüli adatot és információt papíron,
 személyesen kell megosztaniuk egymással, ugyanis a cég által használt nyilvános levelezőrendszert nem tartják elég biztonságosnak.
-Ennek a legnagyobb hátránya, - azon kívül, hogy ineffektív és pocskék - hogy ez a módszer megköveteli,
+Ennek a legnagyobb hátránya, - azon kívül, hogy ineffektív és pocsék - hogy ez a módszer megköveteli,
 hogy az alkalmazottaikat a papír alapú adat és információ cserék megzavarják, kizökkentik őket munkájukból,
 és a papír alapú bizalmas irat tárolás miatt nagyon szigorú intézkedéseket kellett bevezetniük az irodájukban,
 ami szintén negatív kihatással van az alkalmazottaik munkavégzésére.
@@ -48,7 +48,7 @@ A mai világban az üzenetváltásaink biztonsága nem mindig tudható elég meg
 Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságában, mivel:
    * Elolvashatják üzeneteinket a tudtunk nélkül.
    * Eladhatják harmadik feleknek.
-   * Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
+   * Egyes szolgáltatók nem használnak titkosítást az üzenetek küldésekor, fogadásakor.
 
 ## 5. Igényelt üzleti folyamatok modellje
 
@@ -63,16 +63,16 @@ a fogadó képes legyen a szoftver megléte mellett a titkosított szöveget vis
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
 | K1 | Felület | Főablak | A felhasználó itt írhatja be a szöveget, vagy megadhatja azt a fájl, és kiválaszthatja, hogy mit szeretne vele csinálni (titkosítani/visszafejteni). Ha a megadott szöveg/fájl tartalmazna nem értelmezett karaktert, a program hibaüzenetben értesíti a felhasználót. |
-| K2 | Felület | Beállítás | A felhasználó itt állíthatja be a titkosítási paramétereket:  Milyen titkosítási módszereket alkalmazzon. A titkosítani kívánt szöveg bevitele és kiíratása. (Szövegdoboz/fájl). A kiválasztott titkosítási módszerek paraméterei (eltolás mértéke, jelszó, stb...) Ha valamelyik követelmény helytelen, a program hibaüzenettel figyelmezteti a felhasználót. |
+| K2 | Felület | Beállítás | A felhasználó itt állíthatja be a titkosítási paramétereket: Milyen titkosítási módszereket alkalmazzon. A titkosítani kívánt szöveg bevitele és kiíratása. (Szövegdoboz/fájl). A kiválasztott titkosítási módszerek paraméterei (eltolás mértéke, jelszó, stb..) Ha valamelyik követelmény helytelen, a program hibaüzenettel figyelmezteti a felhasználót. |
 | K3 | Kriptográfiai módszer | Caesar-féle titkosítás | A betűkhöz hozzárendeli az utána lévőt eltolási mértékkel. Az így kapott kódolt szöveg már nem tartalmaz értelmes szavakat. |
-| K4 | Kriptográfiai módszer |  Kulcsszavas Caesar-féle titkosítás | Hasonló a Caesar-féle titkosításhoz, az első néhány betűt a kulcsszó betűihez rendeli hozzá. Ezzel nehezebbé teszi az illegális fejtő munkáját. |
+| K4 | Kriptográfiai módszer | Kulcsszavas Caesar-féle titkosítás | Hasonló a Caesar-féle titkosításhoz, az első néhány betűt a kulcsszó betűihez rendeli hozzá. Ezzel nehezebbé teszi az illegális fejtő munkáját. |
 | K5 | Kriptográfiai módszer | Hill-féle titkosítás | Mátrixokkal való szorzást és maradékos osztást alkalmazva betűpárokat kódol betűpárokká. |
 | K6 | Kriptográfiai módszer | Vigenére-féle titkosítás | Karaktertáblázatot alkalmazva kódolja a betűket a szövegben. A kódolást a jelszó karaktereinek segítségével végzi el. |
 | K7 | Kriptográfiai módszer | Autoclave titkosítás | Hasonló Vigenére-féle titkosításhoz. Az első pár karaktert maga a jelszó karakterei kódolják le, majd utána a szöveg többi rész, ezáltal nehezíti a fejtést. |
 | K8 | Funkció | Titkosítás, visszafejtés | A megadott beállításokkal a program titkosítja/visszafejti a kívánt szöveget, fájlt. |
 
 ## 7. Fogalomtár
-   * Malware: Rosszindulatú, kártékony szoftver amelyet adatlopásra is használnak.
+   * Malware: Rosszindulatú, kártékony szoftver, amelyet adatlopásra is használnak.
    * Kódolás: Az adatok más felhasználható formátumba történő átalakítása különböző rendszerek által.
    * Titkosítás: A titkosítás az adatok átalakításának módja, azzal a szándékkal, hogy titokban tartja.
    * Adatszivárgás: Amikor védett, bizalmas adatok valamilyen módon kijutnak, „kiszivárognak” a védett környezetből.

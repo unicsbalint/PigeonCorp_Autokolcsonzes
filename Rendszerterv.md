@@ -17,7 +17,6 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 
 ### 2.1 Projektszerepkörök, felelőségek:
    * Scrum masters:
-     - Bognár Viktória
      - Bódi Maja
      - Cserneczky Bálint
    * Product owner: Dr. Tajti Tibor Gábor

@@ -3,7 +3,7 @@
 
 A rendszer célja, hogy az üzeneteinket biztonságosabbá tegyük azzal, hogy különböző
 titkosítási módszereket alkalmazunk. Ezeket a módszereket vegyíteni is lehet, mellyel
-csökkenthetjük a szöveg visszafejtésének  esélyét idegen fejtők által. Fontos, hogy a
+csökkenthetjük a szöveg visszafejtésének esélyét idegen fejtők által. Fontos, hogy a
 felhasználó könnyen el tudjon igazodni a felületeken ezért minimalista felhasználói felületet
 kap a program. A titkosításhoz meg kell adni bizonyos paramétereket a beállításokban 
 (például mekkora legyen a Caesar-féle titkosításnál az eltolás mértéke), majd ugyanezeket
@@ -17,7 +17,6 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 
 ### 2.1 Projektszerepkörök, felelőségek:
    * Scrum masters:
-     - Bognár Viktória
      - Bódi Maja
      - Cserneczky Bálint
    * Product owner: Dr. Tajti Tibor Gábor
@@ -46,7 +45,7 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 |Program                  |Képernyőtervek elkészítése              |         2 |             1 |                      1 |                1 |                   1 |
 |Program                  |Prototípus elkészítése                  |         3 |             8 |                      8 |                8 |                   8 |
 |Program                  |Alapfunkciók elkészítése                |         3 |             8 |                      8 |                8 |                   8 |
-|Program                  |Titkostíási funkciók elkészítése        |         3 |             8 |                      8 |                8 |                   8 |
+|Program                  |Titkosítási funkciók elkészítése        |         3 |             8 |                      8 |                8 |                   8 |
 |Program                  |Fájlbaírás / Fájlból olvasás elkészítése|         3 |             8 |                      8 |                8 |                   8 |
 |Program                  |Tesztelés                               |         4 |             2 |                      2 |                2 |                   2 |
 
@@ -57,7 +56,7 @@ akkor tudnia kell a használt módszert és a módszerhez szükséges paraméter
 
 ### 3.1 Üzleti szereplők
 
-A rendszer regisztrálás nélkül használható. Akármelyik felhasználó akinek
+A rendszer regisztrálás nélkül használható. Akármelyik felhasználó, akinek
 az eszközén megtalálható a szoftver mindenféle korlátozás nélkül használhatja.
 Annak eldöntése, hogy a szoftvert kinek az eszközére települ és ki használhatja
 azt a megrendelő vállalat döntésére van bízva.
@@ -66,14 +65,14 @@ azt a megrendelő vállalat döntésére van bízva.
 
 A felhasználó a szoftver elindítása után kedve használhatja a titkosítást és visszafejtést,
 kiválaszthatja, hogy ha szövegből szeretne olvasni vagy írni,
-valamint a szoftver korlátozásain belül testreszabhatja a beállításokat is.
+valamint a szoftver korlátozásain belül testre szabhatja a beállításokat is.
 A beállításokon belül kiválaszthatja a használni kívánt titkosítást és annak
-bonyolultáságát is.
+bonyolultságát is.
 
 * **Fájl kiválasztása:** A felhasználó ezen menüpont segítségével kiválaszthatja
 a beolvasni kívánt fájlt.
 * **Művelet indítása:** Ezen funkció használatával titkosításkor a szoftver elvégzi a titkosítást
-és az felhasználó által kívánt módon vagy a szövegdobozban vagy pedig külön fájlban
+és az felhasználó által kívánt módon vagy a szövegdobozban, vagy pedig külön fájlban
 megjeleníti azt.
 * **Beállítások:** A funkción keresztül elérheti a felhasználó
 a szoftver beállításait.
@@ -113,7 +112,7 @@ ezért a felhasználók között nem teszünk különbséget.
 A szoftver egy nagyon egyszerű menürendszert tartalmaz.
 Az indításkor a felhasználót a főoldal menü fogadja, ahol
 megtalálja az input mezőt, valamint innen átléphet a
-beállításokat tartalmazó menüpontba, ahol testreszabhatja
+beállításokat tartalmazó menüpontba, ahol testre szabhatja
 milyen konfigurációt szeretne használni.
 
 ## 6. Fizikai környezet
@@ -137,14 +136,14 @@ A program nem kapcsolódik adatbázis rendszerhez, ezért nem kell adatbázis re
 
 ### A program elérése, kezelése
 A programot Windows operációs rendszert futtató és .NET keretrendszerrel rendelkező számítógép
-futtathatja. A futtatás egyszerű, csak kétszer kell rákattintani a futtatható álományra, vagy
-az allománynak a parancsikonjára.
+futtathatja. A futtatás egyszerű, csak kétszer kell rákattintani a futtatható állományra, vagy
+az állománynak a parancsikonjára.
 
 ## 9. Adatbázis terv
 
 Adatbázis használatának hiányában nem szükséges az adatbázis terv,
 de a program beállításokat egy fájlba menti el és olvassa be a könnyebb felhasználhatóság
-érdekében. Egy felhasználó több ilyen beálítás fájlt is hordozhat magával, a különböző
+érdekében. Egy felhasználó több ilyen beállítás fájlt is hordozhat magával, a különböző
 tartalmú fájlok/üzenetek titkosításához.
 
 ## 10. Implementációs terv
@@ -155,7 +154,7 @@ tartalmú fájlok/üzenetek titkosításához.
 
 ## 11. Tesztterv
 
-A tesztelések célja a rendszer és komponensei funckionalitásának teljes vizsálata,
+A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata,
 ellenőrzése a rendszer által megvalósított üzleti szolgáltatások verifikálása.
 A teszteléseket a fejlesztői csapat minden tagja elvégzi.
 Egy teszt eredményeit a tagok dokumentálják külön fájlokba.

@@ -1,13 +1,13 @@
 # Funkcionális specifikáció
 ## 1. Jelenlegi helyzet leírása
 
-A megerendelő cégnek tevékenységi köréből adódóan, rengeteg fontos,
-bizalmas adatot és információt kell megoszania az alkalmazottaival,
+A megrendelő cégnek tevékenységi köréből adódóan, rengeteg fontos,
+bizalmas adatot és információt kell megosztania az alkalmazottaival,
 hogy a munkájukat hatékonyan tudják végezni.
 Jelenleg minden fontosabb cégen belüli adatot és információt papíron,
 személyesen kell megosztaniuk egymással,
 ugyanis a cég által használt nyilvános levelezőrendszert nem tartják elég biztonságosnak.
-Ennek a legnagyobb hátránya, - azon kívül, hogy ineffektív és pocskék - 
+Ennek a legnagyobb hátránya, - azon kívül, hogy ineffektív és pocsék - 
 hogy ez a módszer megköveteli, hogy az alkalmazottaikat a papír alapú adat és információ cserék megzavarják,
 kizökkentik őket munkájukból, és a papír alapú bizalmas irat tárolás miatt nagyon szigorú intézkedéseket kellett bevezetniük az irodájukban,
 ami szintén negatív kihatással van az alkalmazottaik munkavégzésére.
@@ -32,7 +32,7 @@ a kapott szöveg olvashatatlan lesz számára.
 A mai világban az üzenetváltásaink biztonsága nem mindig tudható elég megfelelőnek, könnyedén
 elolvashatóak üzeneteink, ha:
    * Az üzenetküldő klienst feltörik, vagy tömeges áttörés, vagy adatszivárgás áldozatává esik,
-   üzeneteink a nyilvánosság, vagy egy harmadik fél elé kerülhet.
+   üzeneteink a nyilvánosság vagy egy harmadik fél elé kerülhet.
    * Véletlenül nem jelentkezünk ki az üzenetküldő kliensből, és magára hagyjuk a számítógépet.
    * Malware áldozatává esve.
    * Szolgáltatók nem használnak elég erős titkosítást.
@@ -40,7 +40,7 @@ elolvashatóak üzeneteink, ha:
 Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságában, mivel:
    * Elolvashatják üzeneteinket a tudtunk nélkül.
    * Eladhatják harmadik feleknek.
-   * Egyes szolgáltatók nem haszálnak titkosítást az üzenetek küldésekor, fogadásakor.
+   * Egyes szolgáltatók nem használnak titkosítást az üzenetek küldésekor, fogadásakor.
 
 ## 4. Igényelt üzleti folyamatok modellje
 ![image](https://github.com/unicsbalint/PigeonCorp_MessageEncrypter/blob/main/imgs/funkspec-igenyeltuzletifolyamatok.png)
@@ -49,15 +49,15 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
 | Id | Modul | Név | Leírás |
 | :---: | --- | --- | --- |
 | K1 | Felület | Főablak | A felhasználó itt írhatja be a szöveget, vagy megadhatja azt a fájl, és kiválaszthatja, hogy mit szeretne vele csinálni (titkosítani/visszafejteni). Ha a megadott szöveg/fájl tartalmazna nem értelmezett karaktert, a program hibaüzenetben értesíti a felhasználót. |
-| K2 | Felület | Beállítás | A felhasználó itt állíthatja be a titkosítási paramétereket:  Milyen titkosítási módszereket alkalmazzon. A titkosítani kívánt szöveg bevitele és kiíratása. (Szövegdoboz/fájl). A kiválasztott titkosítási módszerek paraméterei (eltolás mértéke, jelszó, stb...) Ha valamelyik követelmény helytelen, a program hibaüzenettel figyelmezteti a felhasználót. |
+| K2 | Felület | Beállítás | A felhasználó itt állíthatja be a titkosítási paramétereket: Milyen titkosítási módszereket alkalmazzon. A titkosítani kívánt szöveg bevitele és kiíratása. (Szövegdoboz/fájl). A kiválasztott titkosítási módszerek paraméterei (eltolás mértéke, jelszó, stb..) Ha valamelyik követelmény helytelen, a program hibaüzenettel figyelmezteti a felhasználót. |
 | K3 | Kriptográfiai módszer | Caesar-féle titkosítás | A betűkhöz hozzárendeli az utána lévőt eltolási mértékkel. Az így kapott kódolt szöveg már nem tartalmaz értelmes szavakat. |
-| K4 | Kriptográfiai módszer |  Kulcsszavas Caesar-féle titkosítás | Hasonló a Caesar-féle titkosításhoz, az első néhány betűt a kulcsszó betűihez rendeli hozzá. Ezzel nehezebbé teszi az illegális fejtő munkáját. |
+| K4 | Kriptográfiai módszer | Kulcsszavas Caesar-féle titkosítás | Hasonló a Caesar-féle titkosításhoz, az első néhány betűt a kulcsszó betűihez rendeli hozzá. Ezzel nehezebbé teszi az illegális fejtő munkáját. |
 | K5 | Kriptográfiai módszer | Hill-féle titkosítás | Mátrixokkal való szorzást és maradékos osztást alkalmazva betűpárokat kódol betűpárokká. |
 | K6 | Kriptográfiai módszer | Vigenére-féle titkosítás | Karaktertáblázatot alkalmazva kódolja a betűket a szövegben. A kódolást a jelszó karaktereinek segítségével végzi el. |
 | K7 | Kriptográfiai módszer | Autoclave titkosítás | Hasonló Vigenére-féle titkosításhoz. Az első pár karaktert maga a jelszó karakterei kódolják le, majd utána a szöveg többi rész, ezáltal nehezíti a fejtést. |
 | K8 | Funkció | Fájl/szövegdoboz beolvasása | A kiválasztott fájlt, vagy a szövegdobozba beírt szöveg beolvasása. |
 | K9 | Funkció | Titkosítás, visszafejtés | A megadott beállításokkal a program titkosítja/visszafejti a kívánt szöveget, fájlt. |
-| K10 | Funkció |  Fájl/szövegdobozba írás | A titksoított/visszafejtett szöveget fájlba írni vagy egy szövegdobozba visszaírni. |
+| K10 | Funkció | Fájl/szövegdobozba írás | A titkosított/visszafejtett szöveget fájlba írni vagy egy szövegdobozba visszaírni. |
 
 ## 6. Használati esetek
 
@@ -66,7 +66,7 @@ Szintén nem lehet megbízni 100%-ig egy adott üzenetküldő cég biztonságáb
 
 ## 7. Megfeleltetés, hogyan fedik le a használati eseteket a követelményeket
 
-K1:  A felhasználót ez az ablak fogadja amikor elindítja a szoftvert,
+K1: A felhasználót ez az ablak fogadja amikor elindítja a szoftvert,
 ezen a felületen már rögtön meg is kezdheti a szövegbevitelt és a titkosítást, vagy fejtést.
 
 K2: Ezen a felületen tudja a felhasználó a titkosítási beállításokat megadni,
@@ -84,7 +84,7 @@ K9: A szövegbevitel után a felhasználó képes megadni, hogy
 a jelenlegi szöveget titkosítani vagy visszafejteni szeretné.
 
 K10: A szövegbeolvasáshoz hasonlóan a felhasználónak lehetősége
-van a visszafejtett szöveget fájlba is kiíírni.
+van a visszafejtett szöveget fájlba is kiírni.
 
 ## 8. Képernyőtervek
 
@@ -101,11 +101,7 @@ melyben látható:
     *	Fájl kiválasztás gomb.
     *	Beállítások gomb.
     *	Művelet indítása gomb.
-    *	4 pipa
-        -	Fájlba olvasás,
-        -	Fájlba írás, 
-        -	szöveg titkosítása, 
-        -	titkosított szöveg visszafejtése
+    *	4 pipa (Fájlba olvasás, Fájlba írás, szöveg titkosítása, titkosított szöveg visszafejtése)
 
 A szövegdobozba írjuk azt a szöveget, amit szeretnénk:
 *	Titkosítani
@@ -158,7 +154,7 @@ Titkosított szöveg visszafejtése: bepipáljuk, ha a titkosított szöveget vi
 Művelet indításával elvégezhetjük a kódolást/dekódolást, ha minden beállítottunk. Ha tovább kell kódolni/dekódolni akkor addig folytatjuk, amíg nem kapjuk meg az eredeti szöveget, vagy már eléggé biztonságosnak véljük.
 
 
-## 10. Funkcó - követelmény megfeleltetése
+## 10. Funkció - követelmény megfeleltetése
 
 | Id | Követelmény | Funkció |
 | :---: | --- | --- |
@@ -180,7 +176,7 @@ adatok nem megfelelő kezekbe kerülhetnek.
 * **Malware:** Az angol "Malicious Software", magyarul rosszindulatú szoftver jelentése,
 köznyelvben az ilyen szoftverekre is használjuk a számítógépes vírus szót. Általában
 valamilyen féle haszonszerzés céljából támadják meg ilyenekkel a rendszereket és
-hálózatokat, viszont vannak csak a készítő saját szórakozása céljábólól
+hálózatokat, viszont vannak csak a készítő saját szórakozása céljából
 elterjedt ilyen szoftverek is. Természetesen ennek minden fajtája illegális.
 * **Kriptográfia:** Titkosítási és visszafejtési módszerek felfedezésével
 foglalkozó tudományág. Konyhanyelven titkosírásnak is nevezzük.

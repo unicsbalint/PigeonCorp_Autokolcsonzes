@@ -47,10 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backend\Database.cs" />
+    <Compile Include="Backend\Encryptions\ExampleEncrytion.cs" />
     <Compile Include="Backend\IUserInterface.cs" />
     <Compile Include="Backend\Message.cs" />
     <Compile Include="Backend\UserInterface.cs" />
-    <Compile Include="Backend\IEncryption.cs" />
+    <Compile Include="Backend\Encryptions\IEncryption.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -9,7 +9,7 @@ namespace MessageEncrypter
     static class Settings
     {
         // egy osztályba ki van gyűjtve az összes beállítás, és a beállítások kezelésével foglalkozó metódusok
-        // ajánlott, hogy minden titksoítási módszer innen kéri a paramétereit
+        // ajánlott, hogy minden titksoítási módszer innen kérje a paramétereit
         static Settings()
         {
             matrix = new int[2, 2];

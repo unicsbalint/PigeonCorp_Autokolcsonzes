@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using MessageEncrypter.Backend;
 
-namespace MessageEncrypter.Backend
+namespace MessageEncrypter
 {
     static class Database
     {
@@ -32,14 +34,19 @@ namespace MessageEncrypter.Backend
         }
 
         //fájlba írás - olvasás
-        static public void initializeDatabase()
+        static public string initializeDatabase(string filePath)
         {
-            throw new NotImplementedException();
+            StreamReader sr = new StreamReader(filePath, Encoding.UTF8);
+            string text = sr.ReadToEnd();
+            sr.Close();
+            return text;
         }
 
-        static public void saveDatabase()
+        static public void saveDatabase(string filePath, string output)
         {
-            throw new NotImplementedException();
+            StreamWriter sw = new StreamWriter(filePath);
+            sw.WriteLine(output);
+            sw.Close();
         }
     }
 }

@@ -48,8 +48,14 @@
   <ItemGroup>
     <Compile Include="Backend\Database.cs" />
     <Compile Include="Backend\Encryptions\ExampleEncrytion.cs" />
+    <Compile Include="Backend\Exceptions\InvalidMatrixException.cs" />
+    <Compile Include="Backend\Exceptions\InvalidPasswordException.cs" />
+    <Compile Include="Backend\Exceptions\KeywordHasDuplicateCharactersException.cs" />
+    <Compile Include="Backend\Exceptions\MatrixHasNoInverseException.cs" />
+    <Compile Include="Backend\Exceptions\ShiftHasIncorrectValueException.cs" />
     <Compile Include="Backend\IUserInterface.cs" />
     <Compile Include="Backend\Message.cs" />
+    <Compile Include="Backend\Settings.cs" />
     <Compile Include="Backend\UserInterface.cs" />
     <Compile Include="Backend\Encryptions\IEncryption.cs" />
     <Compile Include="Form1.cs">

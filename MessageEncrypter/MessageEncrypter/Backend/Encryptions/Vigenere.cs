@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MessageEncrypter
+namespace MessageEncrypter.Backend.Encryptions
 {
-    static class VigenereEncryption
+    class Vigenere : IEncryption
     {
+        // mivel a karaktertábla ugyanaz marad program futtatása során, az Encrypt és
+        // a Decrypt függvény is csak aktuális paraméterben változnak, érdemesebb static
+        // osztállyal létrehozni a titkosításokat
         private static string[] characterMatrix;
-        static VigenereEncryption()
+        static Vigenere()
         {
             string charmap = Settings.ALLOWED_CHARACTERS;
             int d = charmap.Length;
@@ -20,9 +23,20 @@ namespace MessageEncrypter
                 characterMatrix[i] += charmap.Substring(i);
                 characterMatrix[i] += charmap.Substring(0, i);
             }
+            /*// karaktertábla tesztelés
+            foreach (string sor in characterMatrix)
+            {
+                Console.WriteLine(sor);
+            }//*/
         }
-        public static string Encrypt(string passwd, string input)
+        public Vigenere()
         {
+            this.passwd = Settings.Password;
+        }
+        private string passwd;
+        public string encryption(string messageToEncrypt)
+        {
+            string input = messageToEncrypt;
             string result = "";
             int currentPwdChar = 0;
             foreach (char icharacter in input)
@@ -46,9 +60,9 @@ namespace MessageEncrypter
             }
             return result;
         }
-        public static string Decrypt(string passwd, string input)
+        public string decryption(string messageToDecrypt)
         {
-
+            string input = messageToDecrypt;
             string result = "";
             int currentPwdChar = 0;
             foreach (char icharacter in input)
@@ -72,5 +86,7 @@ namespace MessageEncrypter
             }
             return result;
         }
+
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MessageEncrypter
 {
-   enum EncryptionEnum
+    enum EncryptionEnum
     {
         None,
         Caesar,

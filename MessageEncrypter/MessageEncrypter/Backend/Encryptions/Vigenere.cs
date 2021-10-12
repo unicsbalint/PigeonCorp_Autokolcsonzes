@@ -8,9 +8,6 @@ namespace MessageEncrypter.Backend.Encryptions
 {
     class Vigenere : IEncryption
     {
-        // mivel a karaktertábla ugyanaz marad program futtatása során, az Encrypt és
-        // a Decrypt függvény is csak aktuális paraméterben változnak, érdemesebb static
-        // osztállyal létrehozni a titkosításokat
         private static string[] characterMatrix;
         static Vigenere()
         {
@@ -23,11 +20,6 @@ namespace MessageEncrypter.Backend.Encryptions
                 characterMatrix[i] += charmap.Substring(i);
                 characterMatrix[i] += charmap.Substring(0, i);
             }
-            /*// karaktertábla tesztelés
-            foreach (string sor in characterMatrix)
-            {
-                Console.WriteLine(sor);
-            }//*/
         }
         public Vigenere()
         {
@@ -86,7 +78,5 @@ namespace MessageEncrypter.Backend.Encryptions
             }
             return result;
         }
-
-
     }
 }

@@ -7,3 +7,9 @@ M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\M
 M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.CoreCompileInputs.cache
 M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.exe
 M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.pdb
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.AssemblyReference.cache
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.Properties.Resources.resources
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.GenerateResource.cache
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.CoreCompileInputs.cache
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.exe
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.pdb

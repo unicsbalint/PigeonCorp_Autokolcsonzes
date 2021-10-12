@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Backend\Database.cs" />
-    <Compile Include="Backend\Encryptions\ExampleEncrytion.cs" />
+    <Compile Include="Backend\Encryptions\AbstractEncryptions.cs" />
+    <Compile Include="Backend\Encryptions\ACaesar.cs" />
+    <Compile Include="Backend\Encryptions\Caesar.cs" />
+    <Compile Include="Backend\Encryptions\KeyedCaesar.cs" />
     <Compile Include="Backend\Exceptions\InvalidMatrixException.cs" />
     <Compile Include="Backend\Exceptions\InvalidPasswordException.cs" />
     <Compile Include="Backend\Exceptions\KeywordHasDuplicateCharactersException.cs" />

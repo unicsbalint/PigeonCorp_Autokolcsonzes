@@ -8,8 +8,8 @@ namespace MessageEncrypter.Backend.Encryptions
 {
     interface IEncryption
     {
-        string encryption();
+        string encryption(string messageToEncrypt);
 
-        string decryption(string message);
+        string decryption(string messageToDecrypt);
     }
 }

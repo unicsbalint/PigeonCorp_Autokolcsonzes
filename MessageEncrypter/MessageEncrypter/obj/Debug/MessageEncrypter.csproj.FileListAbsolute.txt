@@ -1,0 +1,9 @@
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\bin\Debug\MessageEncrypter.exe.config
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\bin\Debug\MessageEncrypter.exe
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\bin\Debug\MessageEncrypter.pdb
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csprojAssemblyReference.cache
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.Properties.Resources.resources
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.GenerateResource.cache
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.CoreCompileInputs.cache
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.exe
+M:\AFP\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.pdb

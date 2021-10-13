@@ -56,6 +56,7 @@
     <Compile Include="Backend\Encryptions\Vigenere.cs" />
     <Compile Include="Backend\Exceptions\InvalidMatrixException.cs" />
     <Compile Include="Backend\Exceptions\InvalidPasswordException.cs" />
+    <Compile Include="Backend\Exceptions\KeyDoesNotExistsException.cs" />
     <Compile Include="Backend\Exceptions\KeywordHasDuplicateCharactersException.cs" />
     <Compile Include="Backend\Exceptions\MatrixHasNoInverseException.cs" />
     <Compile Include="Backend\Exceptions\ShiftHasIncorrectValueException.cs" />

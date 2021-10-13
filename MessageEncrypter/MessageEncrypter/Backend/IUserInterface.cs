@@ -12,10 +12,7 @@ namespace MessageEncrypter.Backend
         string encryption(string message, IEncryption encryptionMethod);
 
         void decryption(string message, string key, IEncryption encryptionMethod);
-
-        void saveSettings();
-
-        void loadSettings();
+        void decryption(string key, IEncryption encryptionMethod);
 
         void onProgramOpen();
 

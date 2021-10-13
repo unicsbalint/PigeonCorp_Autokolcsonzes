@@ -28,14 +28,10 @@ namespace MessageEncrypter.Backend
             throw new NotImplementedException();
         }
 
-        public void loadSettings()
+        public void decryption(string key, IEncryption encryptionMethod)
         {
-            throw new NotImplementedException();
-        }
-
-        public void saveSettings()
-        {
-            throw new NotImplementedException();
+            string messageToDecrypt = Database.getMessageByKey(key);
+            
         }
 
         public void onProgramOpen()

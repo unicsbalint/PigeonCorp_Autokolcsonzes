@@ -5,17 +5,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using MessageEncrypter.Backend;
+using MessageEncrypter.Backend.Exceptions;
 
 namespace MessageEncrypter
 {
     static class Database
+
     {
         private static List<Message> datas = new List<Message>();
         internal static List<Message> Datas { get => datas; set => datas = value; }
 
-        static public string getMessageByKey(string key)
+        static public string getEncryptedMessageByKey(string key)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < datas.Count; i++)
+            {
+                if (datas[i].Key == key)
+                {
+                    return datas[i].MessageText;
+                }
+            }
+            throw new KeyDoesNotExistsException();
+        }
+
+        public static string getOriginalMessageByKey(string key)
+        {
+            for (int i = 0; i < datas.Count; i++)
+            {
+                if(datas[i].Key == key)
+                {
+                    return datas[i].OriginalText;
+                }
+            }
+            throw new KeyDoesNotExistsException();
         }
 
         static public void storeNewMessage(Message message)

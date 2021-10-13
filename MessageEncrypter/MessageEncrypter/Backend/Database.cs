@@ -13,6 +13,9 @@ namespace MessageEncrypter
 
     {
         private static List<Message> datas = new List<Message>();
+
+        static Random rnd = new Random();
+
         internal static List<Message> Datas { get => datas; set => datas = value; }
 
         static public string getEncryptedMessageByKey(string key)
@@ -46,15 +49,27 @@ namespace MessageEncrypter
 
         static public string generateNewKey()
         {
-            throw new NotImplementedException();
+            string characterMap = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789";
+            string newKey = "";
+            for (int i = 0; i < 11; i++)
+            {
+                newKey += characterMap[rnd.Next(0, characterMap.Length)];
+            }
+            return newKey;
         }
 
         static public bool checkKeyExist(string key)
         {
-            throw new NotImplementedException();
+            foreach (Message msg in datas)
+            {
+                if (msg.Key == key)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
-        //fájlba írás - olvasás
         static public string initializeDatabase(string filePath)
         {
             StreamReader sr = new StreamReader(filePath, Encoding.UTF8);

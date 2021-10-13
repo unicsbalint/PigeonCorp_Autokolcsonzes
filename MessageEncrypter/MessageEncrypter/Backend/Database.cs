@@ -49,7 +49,7 @@ namespace MessageEncrypter
             throw new NotImplementedException();
         }
 
-        static private void checkKeyExist(string key)
+        static public bool checkKeyExist(string key)
         {
             throw new NotImplementedException();
         }

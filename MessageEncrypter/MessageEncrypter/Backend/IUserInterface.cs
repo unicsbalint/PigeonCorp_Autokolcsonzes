@@ -11,8 +11,8 @@ namespace MessageEncrypter.Backend
     {
         string encryption(string message, IEncryption encryptionMethod);
 
-        void decryption(string message, string key, IEncryption encryptionMethod);
-        void decryption(string key, IEncryption encryptionMethod);
+        string decryption(string message, string key, IEncryption encryptionMethod);
+        string decryption(string key, IEncryption encryptionMethod);
 
         void onProgramOpen();
 

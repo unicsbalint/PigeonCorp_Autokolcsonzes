@@ -23,15 +23,31 @@ namespace MessageEncrypter.Backend
             return result;
         }
         
-        public void decryption(string message, string key, IEncryption encryptionMethod)
+        public string decryption(string message, string key, IEncryption encryptionMethod)
         {
-            throw new NotImplementedException();
+            string messageToDecrypt = Database.getEncryptedMessageByKey(key);
+
+            if (message != messageToDecrypt)
+                throw new Exception("The message is not valid.");
+
+            //string result = encryptionMethod.decryption(message);
+
+            //átmeneti
+            string result = Database.getOriginalMessageByKey(key);
+
+            return result;
         }
 
-        public void decryption(string key, IEncryption encryptionMethod)
+        public string decryption(string key, IEncryption encryptionMethod)
         {
-            string messageToDecrypt = Database.getMessageByKey(key);
-            
+            string messageToDecrypt = Database.getEncryptedMessageByKey(key);
+
+            //string result = encryptionMethod.decryption(messageToDecrypt);
+
+            //átmeneti
+            string result = Database.getOriginalMessageByKey(key);
+
+            return result;
         }
 
         public void onProgramOpen()

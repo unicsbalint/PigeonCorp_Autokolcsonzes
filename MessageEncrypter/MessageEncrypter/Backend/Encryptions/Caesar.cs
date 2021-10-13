@@ -11,6 +11,7 @@ namespace MessageEncrypter.Backend.Encryptions
         public Caesar()
         {
             this.ShiftBy = Settings.Shift;
+            Type = EncryptionEnum.Caesar;
         }
 
         private int shiftBy;
@@ -38,6 +39,16 @@ namespace MessageEncrypter.Backend.Encryptions
                 int valueindex = (i + shiftBy) % CharacterTable.Count;
                 CharacterTable[keys[i]] = keys[valueindex];
             }
+        }
+
+        public override string ToString()
+        {
+            string returnString = string.Format("{0}: {1}", Type, ShiftBy);
+            if(EncryptType != null)
+            {
+                returnString += ";" + EncryptType.ToString();
+            }
+            return returnString;
         }
     }
 }

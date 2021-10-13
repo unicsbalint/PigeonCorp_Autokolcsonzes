@@ -20,6 +20,20 @@ namespace MessageEncrypter.Backend.Encryptions
                 encryptType = value;
             } 
         }
+
+        EncryptionEnum type;
+        protected EncryptionEnum Type
+        {
+            get
+            {
+                return type;
+            }
+            set
+            {
+                type = value;
+            }
+        }
+
         public virtual string decryption(string messageToDecrypt)
         {
             if (encryptType != null)

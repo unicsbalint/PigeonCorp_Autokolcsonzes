@@ -24,6 +24,7 @@ namespace MessageEncrypter.Backend.Encryptions
         public Vigenere()
         {
             this.passwd = Settings.Password;
+            Type = EncryptionEnum.Vigenere;
         }
 
         private string passwd;
@@ -88,6 +89,16 @@ namespace MessageEncrypter.Backend.Encryptions
                 }
             }
             return result;
+        }
+
+        public override string ToString()
+        {
+            string returnString = string.Format("{0}: {1}", Type, passwd);
+            if (EncryptType != null)
+            {
+                returnString += ";" + EncryptType.ToString();
+            }
+            return returnString;
         }
     }
 }

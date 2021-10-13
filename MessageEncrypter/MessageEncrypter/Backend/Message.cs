@@ -23,7 +23,17 @@ namespace MessageEncrypter.Backend
 
         //Átmeneti
         private string originalText;
-        public string OriginalText { get; set; }
+        public string OriginalText
+        {
+            get
+            {
+                return originalText;
+            }
+            set
+            {
+                originalText = value;
+            }
+        }
 
         private string messageText;
         private string key;
@@ -33,6 +43,9 @@ namespace MessageEncrypter.Backend
         public string Key { get => key; set => key = value; }
         internal IEncryption Encryption { get => encryption; set => encryption = value; }
 
-        //override toString();
+        public override string ToString()
+        {
+            return string.Format("{0}, {1}, {2}, {3};", key, originalText, messageText, encryption.ToString());
+        }
     }
 }

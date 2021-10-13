@@ -11,6 +11,7 @@ namespace MessageEncrypter.Backend.Encryptions
         public KeyedCaesar()
         {
             this.ShiftBy = Settings.Keyword;
+            Type = EncryptionEnum.KeywordCaesar;
         }
 
         private string shiftBy;
@@ -53,6 +54,16 @@ namespace MessageEncrypter.Backend.Encryptions
             {
                 CharacterTable[keys[i]] = remainingKeys[i - shiftBy.Length];
             }
+        }
+
+        public override string ToString()
+        {
+            string returnString = string.Format("{0}: {1}", Type, ShiftBy);
+            if (EncryptType != null)
+            {
+                returnString += ";" + EncryptType.ToString();
+            }
+            return returnString;
         }
     }
 }

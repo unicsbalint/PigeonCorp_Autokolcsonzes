@@ -25,6 +25,7 @@ namespace MessageEncrypter
         public Autoclave()
         {
             this.passwd = Settings.Password;
+            Type = EncryptionEnum.Autoclave;
         }
         private string passwd;
         public override string encryption(string messageToEncrypt)
@@ -105,6 +106,16 @@ namespace MessageEncrypter
                 }
             }
             return result;
+        }
+
+        public override string ToString()
+        {
+            string returnString = string.Format("{0}: {1}", Type, passwd);
+            if (EncryptType != null)
+            {
+                returnString += ";" + EncryptType.ToString();
+            }
+            return returnString;
         }
     }
 }

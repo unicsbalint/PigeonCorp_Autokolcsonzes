@@ -78,10 +78,13 @@ namespace MessageEncrypter
             return text;
         }
 
-        static public void saveDatabase(string filePath, string output)
+        static public void saveDatabase(string filePath)
         {
             StreamWriter sw = new StreamWriter(filePath);
-            sw.WriteLine(output);
+            foreach (Message message in datas)
+            {
+                sw.WriteLine(message.ToString());
+            }
             sw.Close();
         }
     }

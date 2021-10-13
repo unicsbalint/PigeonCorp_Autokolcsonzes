@@ -97,11 +97,15 @@ van a visszafejtett szöveget fájlba is kiírni.
 
 Minden felhasználónak a program megnyitásakor a főablak jelenik meg,
 melyben látható:
-    *	Szövegdoboz.
-    *	Fájl kiválasztás gomb.
-    *	Beállítások gomb.
-    *	Művelet indítása gomb.
-    *	4 pipa (Fájlba olvasás, Fájlba írás, szöveg titkosítása, titkosított szöveg visszafejtése)
+*	Szövegdoboz.
+*	Fájl kiválasztás gomb.
+*	Beállítások gomb.
+*	Művelet indítása gomb.
+*	4 pipa 
+    *	Fájlba olvasás 
+    *	Fájlba írás
+    *	szöveg titkosítása
+    *	titkosított szöveg visszafejtése
 
 A szövegdobozba írjuk azt a szöveget, amit szeretnénk:
 *	Titkosítani
@@ -146,10 +150,14 @@ Ezután menthetjük a beállításainkat, és kódolhatunk, illetve dekódolhatu
 vagy a mégse gombra megyünk és nem mentjük el változtatásainkat.
 
 Beállíthatjuk a főablakon, hogy milyen műveletet akarunk csinálni a jelölő négyzet bepipálásával.
-Fájból olvasás: bepipáljuk, ha a már leírott formátumban létezik a szöveg, amit kódolni/dekódolni szeretnénk.
-Fájlból írás: bepipáljuk, ha fájlba szeretnénk írni a kódolt, illetve dekódolt üzenetet.
-Szöveg titkosítás: bepipáljuk, ha a szöveget titkosítani szeretnénk.
-Titkosított szöveg visszafejtése: bepipáljuk, ha a titkosított szöveget vissza szeretnénk fejteni az eredeti szövegre.
+* Fájból olvasás: 
+  bepipáljuk, ha a már leírott formátumban létezik a szöveg, amit kódolni/dekódolni szeretnénk.
+* Fájlból írás:
+  bepipáljuk, ha fájlba szeretnénk írni a kódolt, illetve dekódolt üzenetet.
+* Szöveg titkosítás:
+  bepipáljuk, ha a szöveget titkosítani szeretnénk.
+* Titkosított szöveg visszafejtése:
+  bepipáljuk, ha a titkosított szöveget vissza szeretnénk fejteni az eredeti szövegre.
 
 Művelet indításával elvégezhetjük a kódolást/dekódolást, ha minden beállítottunk. Ha tovább kell kódolni/dekódolni akkor addig folytatjuk, amíg nem kapjuk meg az eredeti szöveget, vagy már eléggé biztonságosnak véljük.
 

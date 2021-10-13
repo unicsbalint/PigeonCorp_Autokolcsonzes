@@ -30,13 +30,13 @@ namespace MessageEncrypter.Backend.Encryptions
                 }
                 for (int i = 0; i < value.Length - 1; i++)
                 {
-                    for(int j = 1; j < value.Length; j++)
+                    for(int j = 0; j < value.Length; j++)
                     {
-                        if (value[i] == value[j])
+                        if (i != j && value[i] == value[j])
                             throw new Exception("All of the characters must be different from each other");
                     }
                 }
-                updateCharTable();
+               // updateCharTable();
                 shiftBy = value;
             }
         }

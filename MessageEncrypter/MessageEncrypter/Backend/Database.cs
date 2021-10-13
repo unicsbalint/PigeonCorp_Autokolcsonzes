@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using MessageEncrypter.Backend;
 using MessageEncrypter.Backend.Exceptions;
+using MessageEncrypter.Backend.Encryptions;
 
 namespace MessageEncrypter
 {
@@ -44,7 +45,12 @@ namespace MessageEncrypter
 
         static public void storeNewMessage(Message message)
         {
-            throw new NotImplementedException();
+            if (!checkKeyExist(message.Key))
+            {
+                datas.Add(message);
+            }
+            else 
+                throw new Exception("Létezik ilyen kulcsú bejegyzés!");
         }
 
         static public string generateNewKey()
@@ -70,18 +76,82 @@ namespace MessageEncrypter
             return false;
         }
 
-        static public string initializeDatabase(string filePath)
+        static public void initializeDatabase(string filePath)
         {
-            StreamReader sr = new StreamReader(filePath, Encoding.UTF8);
-            string text = sr.ReadToEnd();
-            sr.Close();
-            return text;
+            if (!File.Exists(filePath))
+            {
+            }
+            else
+            {
+                Datas.Clear();
+                StreamReader sr = new StreamReader(filePath, Encoding.UTF8);
+                while (!sr.EndOfStream)
+                {
+                    string text = sr.ReadLine();
+                    string[] adatok = text.Split('|');
+                    IEncryption typeofencryption;
+                    switch (adatok[2])
+                    {
+                        case "caesar":
+                            typeofencryption = new Caesar();
+                            break;
+                        case "keyed_caesar":
+                            typeofencryption = new KeyedCaesar();
+                            break;
+                        case "hill":
+                            typeofencryption = new Hill();
+                            break;
+                        case "vigenere":
+                            typeofencryption = new Vigenere();
+                            break;
+                        case "autoclave":
+                            typeofencryption = new Autoclave();
+                            break;
+                        default: throw new Exception("Ismeretlen titkosítási forma");
+
+                    }
+                    Message ujuzenet = new Message(adatok[0], adatok[1], typeofencryption);
+                    storeNewMessage(ujuzenet);
+                }
+                sr.Close();
+                
+            }
         }
 
-        static public void saveDatabase(string filePath, string output)
+        static public void saveDatabase(string filePath)
         {
             StreamWriter sw = new StreamWriter(filePath);
-            sw.WriteLine(output);
+            foreach (Message msg in Datas)
+            {
+                string line = msg.Key + "|";
+                line += msg.MessageText + "|";
+
+                if (msg.Encryption is Caesar)
+                {
+                    line += "caesar";
+                }
+                else if (msg.Encryption is KeyedCaesar)
+                {
+                    line += "keyed_caesar";
+                }
+                else if (msg.Encryption is KeyedCaesar)
+                {
+                    line += "hill";
+                }
+                else if (msg.Encryption is Vigenere)
+                {
+                    line += "vigenere";
+                }
+                else if (msg.Encryption is Autoclave)
+                {
+                    line += "autoclave";
+                }
+                else
+                {
+                    line += "caesar";
+                }
+                sw.WriteLine(line);
+            }
             sw.Close();
         }
     }

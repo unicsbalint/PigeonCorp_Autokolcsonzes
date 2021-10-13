@@ -12,7 +12,7 @@ namespace MessageEncrypter.Backend.Encryptions
         static string charmap = Settings.ALLOWED_CHARACTERS;
         public Hill()
         {
-            //matrixKey = Settings.matrixKey;
+            matrixKey = Settings.MatrixKey;
         }
         private int matrixKey;
         public override string encryption(string messageToEncryption)

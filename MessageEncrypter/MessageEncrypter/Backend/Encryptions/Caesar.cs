@@ -26,7 +26,7 @@ namespace MessageEncrypter.Backend.Encryptions
             {
                 if (value > 25 || value < 1)
                     throw new Exception("You must choose a number between 1 and 25");
-                updateCharTable();
+                //updateCharTable();
                 shiftBy = value;
             }
         }

@@ -49,7 +49,7 @@ namespace MessageEncrypter.Backend
 
             return result;
         }
-
+        
         public void onProgramOpen()
         {
             throw new NotImplementedException();

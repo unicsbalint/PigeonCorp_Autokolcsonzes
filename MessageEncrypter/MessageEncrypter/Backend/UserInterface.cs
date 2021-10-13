@@ -9,9 +9,18 @@ namespace MessageEncrypter.Backend
 {
     class UserInterface : IUserInterface
     {
-        public string encryption(string message, IEncryption encryptionMethod)
+        public string encryption(string messageToEncrypt, IEncryption encryptionMethod)
         {
-            throw new NotImplementedException();
+            string result = encryptionMethod.encryption(messageToEncrypt);
+
+            Message message = new Message(Database.generateNewKey(), result, encryptionMethod);
+
+            //átmeneti
+            message.OriginalText = messageToEncrypt;
+
+            Database.storeNewMessage(message);
+
+            return result;
         }
         
         public void decryption(string message, string key, IEncryption encryptionMethod)

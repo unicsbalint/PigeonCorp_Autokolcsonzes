@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MessageEncrypter.Backend.Encryptions
 {
-    class Vigenere : IEncryption
+    class Vigenere : AbstractEncryptions
     {
         private static string[] characterMatrix;
         static Vigenere()
@@ -25,10 +25,21 @@ namespace MessageEncrypter.Backend.Encryptions
         {
             this.passwd = Settings.Password;
         }
+
         private string passwd;
-        public string encryption(string messageToEncrypt)
+
+        public override string encryption(string messageToEncrypt)
         {
-            string input = messageToEncrypt;
+            if (messageToEncrypt == "" || messageToEncrypt == " ")
+                return "";
+
+            string input = base.encryption(messageToEncrypt);
+
+            if (input == "")
+            {
+                input = messageToEncrypt;
+            }
+
             string result = "";
             int currentPwdChar = 0;
             foreach (char icharacter in input)
@@ -52,7 +63,7 @@ namespace MessageEncrypter.Backend.Encryptions
             }
             return result;
         }
-        public string decryption(string messageToDecrypt)
+        public override string decryption(string messageToDecrypt)
         {
             string input = messageToDecrypt;
             string result = "";

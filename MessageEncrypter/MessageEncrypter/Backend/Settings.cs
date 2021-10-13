@@ -72,7 +72,7 @@ namespace MessageEncrypter
             }
             set
             {
-                if (value > ALLOWED_CHARACTERS.Length || value < 0)
+                if (value > ALLOWED_CHARACTERS.Length / 2 || value < 0)
                 {
                     throw new ShiftHasIncorrectValueException();
                 }
@@ -102,6 +102,7 @@ namespace MessageEncrypter
                             throw new KeywordHasDuplicateCharactersException();
                         }
                     }
+                    
                 }
                 keyword = value;
             }

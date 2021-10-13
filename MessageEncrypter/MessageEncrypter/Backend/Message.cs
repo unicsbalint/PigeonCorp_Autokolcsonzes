@@ -21,6 +21,10 @@ namespace MessageEncrypter.Backend
             this.Key = key;
         }
 
+        //Átmeneti
+        private string originalText;
+        public string OriginalText { get; set; }
+
         private string messageText;
         private string key;
         private IEncryption encryption;

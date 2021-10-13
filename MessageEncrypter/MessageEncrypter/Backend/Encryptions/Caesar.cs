@@ -8,9 +8,9 @@ namespace MessageEncrypter.Backend.Encryptions
 {
     class Caesar : ACaesar
     {
-        public Caesar(int shiftBy)
+        public Caesar()
         {
-            this.ShiftBy = shiftBy;
+            this.ShiftBy = Settings.Shift;
         }
 
         private int shiftBy;

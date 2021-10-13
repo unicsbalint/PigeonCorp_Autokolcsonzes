@@ -7,7 +7,7 @@ using MessageEncrypter.Backend.Encryptions;
 
 namespace MessageEncrypter
 {
-    class Autoclave : IEncryption
+    class Autoclave : AbstractEncryptions
     {
         private static string[] characterMatrix;
         static Autoclave()
@@ -27,9 +27,18 @@ namespace MessageEncrypter
             this.passwd = Settings.Password;
         }
         private string passwd;
-        public string encryption(string messageToEncrypt)
+        public override string encryption(string messageToEncrypt)
         {
-            string input = messageToEncrypt;
+            if (messageToEncrypt == "" || messageToEncrypt == " ")
+                return "";
+
+            string input = base.encryption(messageToEncrypt);
+
+            if (input == "")
+            {
+                input = messageToEncrypt;
+            }
+
             string result = "";
             int currentPwdChar = 0;
             int currentInputChar = 0;
@@ -62,7 +71,7 @@ namespace MessageEncrypter
             }
             return result;
         }
-        public string decryption(string messageToDecrypt)
+        public override string decryption(string messageToDecrypt)
         {
             string input = messageToDecrypt;
             string result = "";

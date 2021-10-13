@@ -10,7 +10,7 @@ namespace MessageEncrypter.Backend.Encryptions
     {
         public KeyedCaesar()
         {
-            this.ShiftBy = shiftBy;
+            this.ShiftBy = Settings.Keyword;
         }
 
         private string shiftBy;

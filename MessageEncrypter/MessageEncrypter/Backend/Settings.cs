@@ -9,10 +9,6 @@ namespace MessageEncrypter
 {
     static class Settings
     {
-        static Settings()
-        {
-            matrix = new int[2, 2];
-        }
         public const string ALLOWED_CHARACTERS = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ0123456789\n\'\".?!:_,;<>()[]{}+-*%/€$&@# ";
 
         private static List<EncryptionEnum> encryptionList = new List<EncryptionEnum>();
@@ -108,23 +104,20 @@ namespace MessageEncrypter
             }
         }
 
-        private static int[,] matrix;
-        public static int[,] Matrix
+        private static int matrixKey;
+        public static int MatrixKey
         {
             get
             {
-                return matrix;
+                return matrixKey;
             }
             set
             {
-                if (value.GetLength(0) != 2 || value.GetLength(1) != 2)
+                if (value < 0)
                 {
                     throw new InvalidMatrixException();
                 }
-                if (value[0, 0] + value[1, 1] - value[1, 0] - value[0, 1] == 0)
-                {
-                    throw new MatrixHasNoInverseException();
-                }
+                matrixKey = value;
             }
         }
 
@@ -182,22 +175,10 @@ namespace MessageEncrypter
                             Keyword = dataAndValue[1];
                             break;
                         case "matrix":
-                            string[] elements = dataAndValue[1].Split(';');
-                            int[,] newMatrix = new int[2, 2];
-                            try
+                            int Mvalue;
+                            if (int.TryParse(dataAndValue[1], out Mvalue))
                             {
-                                newMatrix[0, 0] = int.Parse(elements[0]);
-                                newMatrix[0, 1] = int.Parse(elements[1]);
-                                newMatrix[1, 0] = int.Parse(elements[2]);
-                                newMatrix[1, 1] = int.Parse(elements[3]);
-                                isMatrixSet = true;
-                            }
-                            catch (FormatException)
-                            {
-
-                            }
-                            finally
-                            {
+                                matrixKey = Mvalue;
                             }
                             break;
                         case "password":
@@ -245,11 +226,7 @@ namespace MessageEncrypter
                 }
                 if (!isMatrixSet)
                 {
-                    Matrix = new int[,]
-                    {
-                        { 10,15 },
-                        { 5,25 }
-                    };
+                    matrixKey = 25;
                 }
                 if (!isPasswordSet)
                 {
@@ -261,11 +238,7 @@ namespace MessageEncrypter
         {
             Keyword = "Keyword";
             Shift = 5;
-            Matrix = new int[,]
-            {
-                { 10,15 },
-                { 5,25 }
-            };
+            matrixKey = 25;
             Password = "Password";
         }
         public static void SaveSettings()
@@ -273,7 +246,7 @@ namespace MessageEncrypter
             StreamWriter sw = new StreamWriter(SETTINGS_FILE);
             sw.WriteLine($"shift={shift}");
             sw.WriteLine($"keyword={keyword}");
-            sw.WriteLine($"matrix={matrix[0, 0]};{matrix[0, 1]};{matrix[1, 0]};{matrix[1, 1]}");
+            sw.WriteLine($"matrix={matrixKey}");
             sw.WriteLine($"password={password}");
             string encList = "";
             for (int i = 0; i < encryptionList.Count - 1; i++)

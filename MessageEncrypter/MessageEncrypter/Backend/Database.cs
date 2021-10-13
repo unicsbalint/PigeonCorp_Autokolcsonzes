@@ -121,6 +121,7 @@ namespace MessageEncrypter
         static public void saveDatabase(string filePath)
         {
             StreamWriter sw = new StreamWriter(filePath);
+
             foreach (Message msg in Datas)
             {
                 string line = msg.Key + "|";
@@ -151,6 +152,7 @@ namespace MessageEncrypter
                     line += "caesar";
                 }
                 sw.WriteLine(line);
+
             }
             sw.Close();
         }

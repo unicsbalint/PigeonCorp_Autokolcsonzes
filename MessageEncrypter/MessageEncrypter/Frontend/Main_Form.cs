@@ -77,7 +77,7 @@ namespace MessageEncrypter
             string Mainkey = tb_keyIO.Text;
             string input;
 
-            if (cb_read_from_file.Checked)
+            if (cb_read_from_file.Checked && cb_encrypt.Checked)
             {
                 if (!File.Exists(path))
                 {

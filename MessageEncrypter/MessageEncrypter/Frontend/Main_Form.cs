@@ -99,7 +99,7 @@ namespace MessageEncrypter
             input = "";
             foreach (char c in temp)
             {
-                if (c == '\n')
+                if (c == '\n' || c == '|')
                 {
                     input += " ";
                 }

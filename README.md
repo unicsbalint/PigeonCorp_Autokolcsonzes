@@ -2,7 +2,7 @@
 
 # Pigeon Corp.
 
-Az Ezsterházy Károly Katolikus Egyetem, Alkalmazások fejlesztése projekt labor (2021. 1.félév) gyakorlatához készült ez a repository.
+Az Eszterházy Károly Katolikus Egyetem, Alkalmazások fejlesztése projekt labor (2021. 1.félév) gyakorlatához készült ez a repository.
 
 ## Csapattagok
 * [Bagoly Gábor](https://github.com/OOHQ3E)

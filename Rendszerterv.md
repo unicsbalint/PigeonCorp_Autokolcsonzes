@@ -85,14 +85,13 @@ a szoftver beállításait.
 | --- | --- | --- |
 | K1 | Titkosítás beállítása | A kívánt titkosításokat és paramétereket a felhasználó be tudja állítani. |
 | K2 | Forrás beállítása | A felhasználó kiválaszthatja a kívánt szöveg forrását. Ez vagy egy fájl, vagy egy szövegdoboz a programon belül. |
-| K3 | Kimenet beállítása | A felhasználó kiválaszthatja a titkosított/visszafejtett szöveg hova kerüljön kiírásra/mentésre |
-| K4 | Cselekmény kiválasztása | A felhasználó miután kiválaszthatja, hogy titkosítani vagy visszafejteni szeretné a szöveget. |
+| K3 | Cselekmény kiválasztása | A felhasználó miután kiválaszthatja, hogy titkosítani vagy visszafejteni szeretné a szöveget. |
 
 ### Nemfunkcionális követelmények
 
 | ID | Megnevezés | Leírás |
 | --- | --- | --- |
-| K5 | Letisztult design | A program ablakainak a designja legyen letisztult, átlátható, könnyen használható. Törekszünk a lehető legkényelmesebb megjelenésre.
+| K4 | Letisztult design | A program ablakainak a designja legyen letisztult, átlátható, könnyen használható. Törekszünk a lehető legkényelmesebb megjelenésre.
 
 ### Támogatott eszközök
 .NET Framework használata miatt platformfüggő.

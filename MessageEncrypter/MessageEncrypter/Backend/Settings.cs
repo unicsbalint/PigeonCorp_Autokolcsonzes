@@ -201,8 +201,11 @@ namespace MessageEncrypter
                             int Mvalue;
                             if (int.TryParse(dataAndValue[1], out Mvalue))
                             {
-                                matrixKey = Mvalue;
-                                isMatrixSet = true;
+                                if (Mvalue >= 1 && Mvalue <= 100)
+                                {
+                                    matrixKey = Mvalue;
+                                    isMatrixSet = true;
+                                }
                             }
                             break;
                         case "password":

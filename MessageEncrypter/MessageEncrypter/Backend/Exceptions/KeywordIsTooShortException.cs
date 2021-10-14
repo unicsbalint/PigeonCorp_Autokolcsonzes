@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MessageEncrypter
 {
-    class InvalidPasswordException:Exception
+    class KeywordIsTooShortException : Exception
     {
-        public InvalidPasswordException():base("A jelszó tartalmaz nem elfogadott karalktert.")
+        public KeywordIsTooShortException() : base("A megadott kulcsszó túl rövid.")
         {
 
         }

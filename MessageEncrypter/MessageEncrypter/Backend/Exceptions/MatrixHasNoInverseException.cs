@@ -8,7 +8,7 @@ namespace MessageEncrypter
 {
     class MatrixHasNoInverseException : Exception
     {
-        public MatrixHasNoInverseException() : base("The givan matrix has no inverrse.")
+        public MatrixHasNoInverseException() : base("A megadott mátrixnak nincs inverze")
         {
 
         }

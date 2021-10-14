@@ -8,7 +8,7 @@ namespace MessageEncrypter.Backend.Exceptions
 {
     class KeyDoesNotExistsException : Exception
     {
-        public KeyDoesNotExistsException() : base("The key doesn't exists")
+        public KeyDoesNotExistsException() : base("A megadott kulcs nem létezik.")
         {
 
         }

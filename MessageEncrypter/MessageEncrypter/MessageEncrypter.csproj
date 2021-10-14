@@ -60,6 +60,8 @@
     <Compile Include="Backend\Exceptions\KeyDoesNotExistsException.cs" />
     <Compile Include="Backend\Exceptions\KeywordHasDuplicateCharactersException.cs" />
     <Compile Include="Backend\Exceptions\MatrixHasNoInverseException.cs" />
+    <Compile Include="Backend\Exceptions\KeywordIsTooShortException.cs" />
+    <Compile Include="Backend\Exceptions\PasswordIsTooShortException.cs" />
     <Compile Include="Backend\Exceptions\ShiftHasIncorrectValueException.cs" />
     <Compile Include="Backend\IUserInterface.cs" />
     <Compile Include="Backend\Message.cs" />

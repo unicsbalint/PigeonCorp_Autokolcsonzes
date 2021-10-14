@@ -8,7 +8,7 @@ namespace MessageEncrypter
 {
     class KeywordHasDuplicateCharactersException : Exception
     {
-        public KeywordHasDuplicateCharactersException() : base("The given keyword has duplicate characters in it.")
+        public KeywordHasDuplicateCharactersException() : base("A megadott kulcsszó duplikált karaktereket tartalmaz.")
         {
 
         }

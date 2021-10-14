@@ -8,7 +8,7 @@ namespace MessageEncrypter
 {
     class InvalidMatrixException:Exception
     {
-        public InvalidMatrixException():base("The given matrix key is invalid")
+        public InvalidMatrixException():base("A megadott mátrix kulcs érték hibás!")
         {
 
         }

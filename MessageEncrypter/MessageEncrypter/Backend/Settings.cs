@@ -68,7 +68,7 @@ namespace MessageEncrypter
             }
             set
             {
-                if (value > ALLOWED_CHARACTERS.Length / 2 || value < 0)
+                if (value > ALLOWED_CHARACTERS.Length - 1 || value < 1)
                 {
                     throw new ShiftHasIncorrectValueException();
                 }
@@ -85,6 +85,10 @@ namespace MessageEncrypter
             }
             set
             {
+                if (value.Length < 5)
+                {
+                    throw new KeywordIsTooShortException();
+                }
                 for (int i = 0; i < value.Length; i++)
                 {
                     if (!ALLOWED_CHARACTERS.Contains(value[i]))
@@ -131,6 +135,10 @@ namespace MessageEncrypter
             }
             set
             {
+                if (value.Length < 5)
+                {
+                    throw new PasswordIsTooShortException();
+                }
                 foreach (char c in value)
                 {
                     if (!ALLOWED_CHARACTERS.Contains(c))
@@ -166,23 +174,47 @@ namespace MessageEncrypter
                             int value;
                             if (int.TryParse(dataAndValue[1], out value))
                             {
-                                isShiftSet = true;
-                                Shift = value;
+                                try
+                                {
+                                    Shift = value;
+                                    isShiftSet = true;
+                                }
+                                catch (ShiftHasIncorrectValueException)
+                                {
+                                }
                             }
                             break;
                         case "keyword":
-                            isKeywordSet = true;
-                            Keyword = dataAndValue[1];
+                            try
+                            {
+                                Keyword = dataAndValue[1];
+                                isKeywordSet = true;
+                            }
+                            catch (KeywordHasDuplicateCharactersException)
+                            {
+                            }
+                            catch (KeywordIsTooShortException)
+                            {
+                            }
                             break;
                         case "matrix":
                             int Mvalue;
                             if (int.TryParse(dataAndValue[1], out Mvalue))
                             {
                                 matrixKey = Mvalue;
+                                isMatrixSet = true;
                             }
                             break;
                         case "password":
-                            Password = dataAndValue[1];
+                            try
+                            {
+                                Password = dataAndValue[1];
+                                isPasswordSet = true;
+                            }
+                            catch (PasswordIsTooShortException)
+                            { }
+                            catch (InvalidPasswordException)
+                            { }
                             break;
                         case "encryption_list":
                             string[] encryptions = dataAndValue[1].Split(';');

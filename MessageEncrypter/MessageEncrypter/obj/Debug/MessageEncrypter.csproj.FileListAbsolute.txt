@@ -24,3 +24,8 @@ C:\Users\Gabol\Desktop\új git\PigeonCorp_MessageEncrypter\MessageEncrypter\Mess
 C:\Users\Gabol\Desktop\új git\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.csproj.CoreCompileInputs.cache
 C:\Users\Gabol\Desktop\új git\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.exe
 C:\Users\Gabol\Desktop\új git\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.pdb
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\bin\Debug\MessageEncrypter.exe.config
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\bin\Debug\MessageEncrypter.exe
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\bin\Debug\MessageEncrypter.pdb
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.Main_Form.resources
+C:\Users\Ricsi\Desktop\PigeonCorp_MessageEncrypter\MessageEncrypter\MessageEncrypter\obj\Debug\MessageEncrypter.Settings_Form.resources

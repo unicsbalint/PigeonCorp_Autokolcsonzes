@@ -90,14 +90,13 @@ namespace MessageEncrypter
                 Settings.Keyword = tb_caesar_keyword.Text;
                 Settings.Password = tb_vigenere_autoclave.Text;
                 Settings.MatrixKey = (int)nud_hill.Value;
-                
+                this.Close();
             }
             catch (Exception exc)
             {
                 MessageBox.Show(exc.Message);
             }
             Settings.SaveSettings();
-            this.Close();
 
         }
 

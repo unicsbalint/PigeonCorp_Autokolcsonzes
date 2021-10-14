@@ -31,8 +31,12 @@ namespace MessageEncrypter
         private void btn_file_choosing_Click(object sender, EventArgs e)
         {
             file_chosing.ShowDialog();
-            path = file_chosing.FileName;
-            lbl_file_location.Text =path.ToString(); 
+            string pathOfFile = file_chosing.FileName.ToString();
+            if (!(pathOfFile == "openFileDialog1"))
+            {
+                path = file_chosing.FileName;
+                lbl_file_location.Text =path.ToString();
+            }
         }
 
         private static string databasePath = "app.database";
@@ -82,7 +86,9 @@ namespace MessageEncrypter
                 }
                 StreamReader be = new StreamReader(path);
                 input = be.ReadToEnd();
+                {
 
+                }
                 be.Close();
             }
             else
@@ -108,11 +114,17 @@ namespace MessageEncrypter
                 
             }
             
+            
             string output;
             Database.initializeDatabase(databasePath);
 
             if (cb_encrypt.Checked)
             {
+                if (input.Length < 5)
+                {
+                    MessageBox.Show("A beolvasott szöveg túl kevés karaktert tartalmaz!\nLegalább 5 karakter hosszúnak kell lennie.");
+                    return;
+                }
                 string key;
                 do
                 {

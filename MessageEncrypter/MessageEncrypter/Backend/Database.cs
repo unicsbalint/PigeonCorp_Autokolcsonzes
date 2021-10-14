@@ -135,7 +135,7 @@ namespace MessageEncrypter
                 {
                     line += "keyed_caesar";
                 }
-                else if (msg.Encryption is KeyedCaesar)
+                else if (msg.Encryption is Hill)
                 {
                     line += "hill";
                 }

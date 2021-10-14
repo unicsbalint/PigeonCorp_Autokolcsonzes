@@ -295,7 +295,7 @@ namespace MessageEncrypter
                         encList += "kwcaesar;";
                         break;
                     case EncryptionEnum.Hill:
-                        encList += "hillr;";
+                        encList += "hill;";
                         break;
                     case EncryptionEnum.Vigenere:
                         encList += "vigenere;";
@@ -318,7 +318,7 @@ namespace MessageEncrypter
                         encList += "kwcaesar";
                         break;
                     case EncryptionEnum.Hill:
-                        encList += "hillr";
+                        encList += "hill";
                         break;
                     case EncryptionEnum.Vigenere:
                         encList += "vigenere";
